@@ -3,6 +3,7 @@ import { Swagger } from "../swagger/Swagger";
 
 export interface TemplateLocations {
   readonly class: string;
+  readonly map: string;
   readonly method: string;
   readonly type: string;
 }

@@ -42,6 +42,9 @@ function loadTemplates(templateLocations: Partial<Templates> = {}): Templates {
     class:
       templateLocations.class ||
       readFileSync(join(DEFAULT_TEMPLATE_PATH, "class.mustache"), "utf-8"),
+    map:
+      templateLocations.map ||
+      readFileSync(join(DEFAULT_TEMPLATE_PATH, "map.mustache"), "utf-8"),
     method:
       templateLocations.method ||
       readFileSync(join(DEFAULT_TEMPLATE_PATH, "method.mustache"), "utf-8"),

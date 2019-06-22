@@ -99,7 +99,7 @@ const makeMethodsFromPaths = (
         (opts.includeDeprecated && isAuthorizedMethod(method)) ||
         isAuthorizedAndNotDeprecated(method)
     )
-    .map(([path, httpVerb, op, globalParams]) => {
+    .map(([path, httpVerb, op, globalParams], index) => {
       // TODO: Start of untested security stuff that needs fixing
       const secureTypes = [];
 
@@ -149,5 +149,8 @@ const makeMethodsFromPaths = (
       }
       // End of weird statements
 
-      return method;
+      return {
+        position: index,
+        ...method
+      };
     });

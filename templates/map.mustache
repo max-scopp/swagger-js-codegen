@@ -1,0 +1,50 @@
+{{position}}: {
+        path: '{{&path}}',
+        method: '{{&method}}',
+        callable: (ctx) => ctx['{{&methodName}}'],
+        params: {
+            {{#parameters}}
+                {{#isSingleton}}
+            '{{&name}}': '{{&singleton}}',
+                {{/isSingleton}}
+                {{^isSingleton}}
+                    {{#isPatternType}}
+            '{{&name}}': /{{&pattern}}/,
+                    {{/isPatternType}}
+                    {{^isPatternType}}
+            '{{&name}}': (p) => p['{{&camelCaseName}}'],
+                    {{/isPatternType}}
+                {{/isSingleton}}
+            {{/parameters}}
+        },
+        headers: {
+            {{#headers}}
+                '{{&name}}': {{&value}},
+            {{/headers}}
+        },
+    {{#parameters}}
+        {{#isBodyParameter}}
+        body: (p) => p['{{&camelCaseName}}'],
+        {{/isBodyParameter}}
+    {{/parameters}}
+        form: {
+    {{#parameters}}
+        {{#isFormParameter}}
+            {{#isSingleton}}
+            '{{&name}}': '{{&singleton}}',
+            {{/isSingleton}}
+            {{^isSingleton}}
+            '{{&name}}': (p) => p['{{&camelCaseName}}'],
+            {{/isSingleton}}
+        {{/isFormParameter}}
+    {{/parameters}}
+        },
+        required: [
+    {{#parameters}}
+        {{#required}}
+        '{{&camelCaseName}}'
+        {{/required}}
+    {{/parameters}}
+        ]
+
+},

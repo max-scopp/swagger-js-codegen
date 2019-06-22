@@ -1,56 +1,74 @@
-{{&methodName}}URL(parameters: {
+
+/**
+* Returns a fully constructed URL, including all query params for GET.
+* @see {{&methodName}}
+* @method
+{{#isDeprecated}}
+* @deprecated
+{{/isDeprecated}}
+*/
+public {{&methodName}}URL(parameters: {
 {{#parameters}}{{^isSingleton}}'{{&camelCaseName}}'{{&cardinality}}: {{> type}},
 {{/isSingleton}}{{/parameters}}
 } & CommonRequestOptions): string {
-    let queryParameters: any = {};
-    const domain = parameters.$domain ? parameters.$domain : this.domain;
-    let path = '{{&path}}';
-    if (parameters.$path) {
-        path = (typeof(parameters.$path) === 'function') ? parameters.$path(path) : parameters.$path;
-    } 
+    const {path: originalPath, params, body: getBody, form, required: requiredParams} = {{className}}.entries[{{position}}];
+    const discardParameters = {{^isBodyParameter}}{{#isPOST}}true{{/isPOST}}{{^isPOST}}false{{/isPOST}}{{/isBodyParameter}};
 
-    {{#parameters}}
-        {{#isQueryParameter}}
-            {{#isSingleton}}
-                queryParameters['{{&name}}'] = '{{&singleton}}';
-            {{/isSingleton}}
-            {{^isSingleton}}
-                {{#isPatternType}}
-                    Object.keys(parameters).forEach(function(parameterName) {
-                    if(new RegExp('{{&pattern}}').test(parameterName)){
-                    queryParameters[parameterName] = parameters[parameterName];
-                    }
-                    });
-                {{/isPatternType}}
-                {{^isPatternType}}
-                    if(parameters['{{&camelCaseName}}'] !== undefined){
-                    queryParameters['{{&name}}'] = parameters['{{&camelCaseName}}'];
-                    }
-                {{/isPatternType}}
-            {{/isSingleton}}
-        {{/isQueryParameter}}
+    const prefferedPath = (typeof(parameters.$path) === 'function') ?
+        parameters.$path(originalPath) : parameters.$path;
 
-        {{#isPathParameter}}
-            path = path.replace('{{=<% %>=}}{<%&name%>}<%={{ }}=%>', `${parameters['{{&camelCaseName}}']}`);
-        {{/isPathParameter}}
-    {{/parameters}}
-    
-    if (parameters.$queryParameters !== undefined && parameters.$queryParameters !== null) {
-        queryParameters = {
-            ...queryParameters,
-            ...parameters.$queryParameters
+    const $queryParameters = parameters.$queryParameters;
+
+    const domain = parameters.$domain || this.domain;
+    const url = new URL(domain + (prefferedPath || originalPath));
+    const sp = url.searchParams;
+
+    if(!discardParameters) {
+        {{#parameters}}
+            {{#isQueryParameter}}
+                const {{camelCaseName}} = params['{{&name}}'];
+
+                {{#isSingleton}}
+                    sp.set('{{&name}}', {{camelCaseName}});
+                {{/isSingleton}}
+                {{^isSingleton}}
+                    {{#isPatternType}}
+                        const matches = Object.keys(params)
+                            .filter(parameterName => {{camelCaseName}}.test(parameterName));
+
+                        matches.forEach(match =>
+                            sp.append('{{name}}', match)
+                        );
+                    {{/isPatternType}}
+                    {{^isPatternType}}
+                        if(typeof {{camelCaseName}} === 'function') {
+                            const has_{{camelCaseName}} = {{camelCaseName}}(parameters);
+                            if(has_{{camelCaseName}} !== undefined){
+                                sp.set('{{&name}}', has_{{camelCaseName}});
+                            }
+                        } else {
+                            this.isUnexpected('Expected "{{&name}}" of type `(parameters) => "{{&camelCaseName}}"`, but is of type: ' + typeof  {{camelCaseName}});
+                        }
+                    {{/isPatternType}}
+                {{/isSingleton}}
+            {{/isQueryParameter}}
+
+            {{#isPathParameter}}
+                url.pathname = String(url.pathname)
+                    .replace('{{&name}}', params['{{&name}}'](parameters));
+            {{/isPathParameter}}
+        {{/parameters}}
+
+
+        if ($queryParameters && Object.keys($queryParameters).length) {
+            Object.entries($queryParameters)
+                .forEach(([$key, $param]) => {
+                    sp.set($key, $param);
+                })
         }
     }
 
-    {{^isBodyParameter}}
-        {{#isPOST}}
-    queryParameters = {};
-        {{/isPOST}}
-    {{/isBodyParameter}}
-
-
-    let keys = Object.keys(queryParameters);
-    return domain + path + (keys.length > 0 ? '?' + (keys.map(key => key + '=' + encodeURIComponent(queryParameters[key])).join('&')): '');
+    return url.toString();
 }
 
 /**
@@ -64,107 +82,81 @@
 {{/externalDocs}}
 * @name {{&className}}#{{&methodName}}
 {{#parameters}}
-    {{^isSingleton}} * @param {{=<% %>=}}{<%&type%>}<%={{ }}=%> {{&camelCaseName}} - {{&description}}{{/isSingleton}}
+    {{^isSingleton}} * @param {{=<% %>=}}{<%&type%>}<%={{ }}=%> {{&camelCaseName}} - {{&description}}{{/isSingleton}}isBodyParameter
 {{/parameters}}
 */
-{{&methodName}}(parameters: {
+public {{&methodName}}(parameters: {
 {{#parameters}}{{^isSingleton}}'{{&camelCaseName}}'{{&cardinality}}: {{> type}},
 {{/isSingleton}}{{/parameters}}
     $queryParameters?: any,
     $domain?: string,
     $path?: string | ((path: string) => string)
 }): Promise<{{&responseTypes}}> {
-    const domain = parameters.$domain ? parameters.$domain : this.domain;
-    let path = '{{&path}}';
-    if (parameters.$path) {
-        path = (typeof(parameters.$path) === 'function') ? parameters.$path(path) : parameters.$path;
-    } 
+    const {path: originalPath, method, params, headers: _headers, body: getBody, form: formParam, required: requiredParams} = {{className}}.entries[{{position}}];
 
-    let body: any;
-    let queryParameters: any = {};
-    let headers: any = {};
-    let form: any = {};
+    // will be overwritten if `discardParameters`
+    let url = new URL(this.{{&methodName}}URL(parameters));
+    const sp = url.searchParams;
+
+    const discardParameters = {{^isBodyParameter}}{{#isPOST}}true{{/isPOST}}{{^isPOST}}false{{/isPOST}}{{/isBodyParameter}};
+
     return new Promise((resolve, reject) => {
-{{#headers}}
-    headers['{{&name}}'] = {{&value}};
-{{/headers}}
+const $queryParameters = parameters.$queryParameters;
 
+let body;
+const headers = new Headers(_headers);
+const form = new FormData();
+
+if(!discardParameters) {
 {{#parameters}}
 
-    {{#isQueryParameter}}
-        {{#isSingleton}}
-            queryParameters['{{&name}}'] = '{{&singleton}}';
-        {{/isSingleton}}
-        {{^isSingleton}}
-            {{#isPatternType}}
-                Object.keys(parameters).forEach(function(parameterName) {
-                    if(new RegExp('{{&pattern}}').test(parameterName)){
-                        queryParameters[parameterName] = parameters[parameterName];
-                    }
-                });
-            {{/isPatternType}}
-            {{^isPatternType}}
-                if(parameters['{{&camelCaseName}}'] !== undefined) {
-                    queryParameters['{{&name}}'] = parameters['{{&camelCaseName}}'];
-                }
-            {{/isPatternType}}
-        {{/isSingleton}}
-    {{/isQueryParameter}}
-
-    {{#isPathParameter}}
-        path = path.replace('{{=<% %>=}}{<%&name%>}<%={{ }}=%>', `${parameters['{{&camelCaseName}}']}`);
-    {{/isPathParameter}}
-
-    {{#isHeaderParameter}}
-        {{#isSingleton}}
-            headers['{{&name}}'] = '{{&singleton}}';
-        {{/isSingleton}}
-        {{^isSingleton}}
-            if(parameters['{{&camelCaseName}}'] !== undefined) {
-                headers['{{&name}}'] = parameters['{{&camelCaseName}}'];
-            }
-        {{/isSingleton}}
-    {{/isHeaderParameter}}
-
-    {{#isBodyParameter}}
-        if(parameters['{{&camelCaseName}}'] !== undefined) {
-            body = parameters['{{&camelCaseName}}'];
-        }
-    {{/isBodyParameter}}
-
-    {{#isFormParameter}}
-        {{#isSingleton}}
-            form['{{&name}}'] = '{{&singleton}}';
-        {{/isSingleton}}
-        {{^isSingleton}}
-            if(parameters['{{&camelCaseName}}'] !== undefined) {
-                form['{{&name}}'] = parameters['{{&camelCaseName}}'];
-            }
-        {{/isSingleton}}
-    {{/isFormParameter}}
-
     {{#required}}
-        if(parameters['{{&camelCaseName}}'] === undefined) {
-            reject(new Error('Missing required {{&paramType}} parameter: {{&camelCaseName}}'));
+        if(parameters['{{&name}}'] === undefined) {
+            reject(new Error('Missing required {{&paramType}} parameter: "{{&camelCaseName}}"'));
             return;
         }
     {{/required}}
 
-{{/parameters}}
-
-if(parameters.$queryParameters) {
-    Object.keys(parameters.$queryParameters).forEach(function(parameterName){
-        queryParameters[parameterName] = parameters.$queryParameters[parameterName];
-    });
-}
-
-    {{^isBodyParameter}}
-        {{#isPOST}}
-            form = queryParameters;
-            queryParameters = {};
-        {{/isPOST}}
+    {{#isBodyParameter}}
+        body = getBody(parameters);
     {{/isBodyParameter}}
 
-    this.request('{{method}}', domain + path, body, headers, queryParameters, form, reject, resolve);
-    });
+    {{#isFormParameter}}
+        {{#isSingleton}}
+            form.append('{{&name}}', formParam['{{&name}}'] as string);
+        {{/isSingleton}}
+        {{^isSingleton}}
+            typeof formParam['{{&name}}'] === 'function' && form.append('{{&name}}', formParam['{{&name}}'](parameters));
+        {{/isSingleton}}
+    {{/isFormParameter}}
+
+{{/parameters}}
+
+        if ($queryParameters && Object.keys($queryParameters).length) {
+            Object.entries($queryParameters)
+                .forEach(([$key, $param]) => {
+                    // not sure why he doesn't know that $param should be a string
+                    sp.set($key, $param as string);
+                })
+        }
+
+    } else {
+        // for some odd reason does searchParams prefer value over it's name (key)
+        url.searchParams.forEach((value, name) => {
+            form.append(name, value);
+        });
+
+        url.search = '';
+    }
+
+    let hasForm = false;
+
+    (form as any).keys().next(({value, done}) => value ? hasForm = true : void 0);
+
+    if(hasForm) {
+        body = form;
+    }
+
+    this.request(method, url.toString(), body, headers, reject, resolve);
+});
 }

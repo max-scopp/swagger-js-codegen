@@ -1,0 +1,2202 @@
+{
+  "program": {
+    "fileInfos": {
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es5.d.ts": {
+        "version": "1f753cee573dea40df8a9dc873fef5566957b19ad513874f6643d8dfb14842d0",
+        "signature": "1f753cee573dea40df8a9dc873fef5566957b19ad513874f6643d8dfb14842d0"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.d.ts": {
+        "version": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96",
+        "signature": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2016.d.ts": {
+        "version": "5f217838d25704474d9ef93774f04164889169ca31475fe423a9de6758f058d1",
+        "signature": "5f217838d25704474d9ef93774f04164889169ca31475fe423a9de6758f058d1"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2017.d.ts": {
+        "version": "459097c7bdd88fc5731367e56591e4f465f2c9de81a35427a7bd473165c34743",
+        "signature": "459097c7bdd88fc5731367e56591e4f465f2c9de81a35427a7bd473165c34743"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2018.d.ts": {
+        "version": "2edd3ddf436ef8e12df876dcae4ecd6a8748577944c477bf4b20d5596e0c9843",
+        "signature": "2edd3ddf436ef8e12df876dcae4ecd6a8748577944c477bf4b20d5596e0c9843"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.core.d.ts": {
+        "version": "2a0390a665763bcc90f0670e43c587928d8fefe2a94a11209c1e22cba7b09f52",
+        "signature": "2a0390a665763bcc90f0670e43c587928d8fefe2a94a11209c1e22cba7b09f52"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.collection.d.ts": {
+        "version": "dd94d8ef48c562389eb58af8df3a3a34d11367f7c818192aa5f16470d469e3f0",
+        "signature": "dd94d8ef48c562389eb58af8df3a3a34d11367f7c818192aa5f16470d469e3f0"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.generator.d.ts": {
+        "version": "828413486bdcaa342558e8e4570b1b287b776cb61b4b70b0214bd10c5d9a94c3",
+        "signature": "828413486bdcaa342558e8e4570b1b287b776cb61b4b70b0214bd10c5d9a94c3"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.iterable.d.ts": {
+        "version": "6c9f73334f8bf47aea685ca5b46a8f7e992a223e96fbceb030f26a4d2324ba21",
+        "signature": "6c9f73334f8bf47aea685ca5b46a8f7e992a223e96fbceb030f26a4d2324ba21"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.promise.d.ts": {
+        "version": "e6b8ff2798f8ebd7a1c7afd8671f2cb67ee1901c422f5964d74b0b34c6574ea2",
+        "signature": "e6b8ff2798f8ebd7a1c7afd8671f2cb67ee1901c422f5964d74b0b34c6574ea2"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.proxy.d.ts": {
+        "version": "5e72f949a89717db444e3bd9433468890068bb21a5638d8ab15a1359e05e54fe",
+        "signature": "5e72f949a89717db444e3bd9433468890068bb21a5638d8ab15a1359e05e54fe"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.reflect.d.ts": {
+        "version": "f5b242136ae9bfb1cc99a5971cccc44e99947ae6b5ef6fd8aa54b5ade553b976",
+        "signature": "f5b242136ae9bfb1cc99a5971cccc44e99947ae6b5ef6fd8aa54b5ade553b976"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.symbol.d.ts": {
+        "version": "9ae2860252d6b5f16e2026d8a2c2069db7b2a3295e98b6031d01337b96437230",
+        "signature": "9ae2860252d6b5f16e2026d8a2c2069db7b2a3295e98b6031d01337b96437230"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": {
+        "version": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303",
+        "signature": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2016.array.include.d.ts": {
+        "version": "3f96f1e570aedbd97bf818c246727151e873125d0512e4ae904330286c721bc0",
+        "signature": "3f96f1e570aedbd97bf818c246727151e873125d0512e4ae904330286c721bc0"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2017.object.d.ts": {
+        "version": "ff8ad203e83338289b0f5defc1a5b5c253fb7d251b464db497383f915a0df3f4",
+        "signature": "ff8ad203e83338289b0f5defc1a5b5c253fb7d251b464db497383f915a0df3f4"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": {
+        "version": "b8667586a618c5cf64523d4e500ae39e781428abfb28f3de441fc66b56144b6f",
+        "signature": "b8667586a618c5cf64523d4e500ae39e781428abfb28f3de441fc66b56144b6f"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2017.string.d.ts": {
+        "version": "21df2e0059f14dcb4c3a0e125859f6b6ff01332ee24b0065a741d121250bc71c",
+        "signature": "21df2e0059f14dcb4c3a0e125859f6b6ff01332ee24b0065a741d121250bc71c"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2017.intl.d.ts": {
+        "version": "c1759cb171c7619af0d2234f2f8fb2a871ee88e956e2ed91bb61778e41f272c6",
+        "signature": "c1759cb171c7619af0d2234f2f8fb2a871ee88e956e2ed91bb61778e41f272c6"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": {
+        "version": "28569d59e07d4378cb3d54979c4c60f9f06305c9bb6999ffe6cab758957adc46",
+        "signature": "28569d59e07d4378cb3d54979c4c60f9f06305c9bb6999ffe6cab758957adc46"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts": {
+        "version": "42102aaeb1bfec213be1e9777466a6d551eeba8567fed18c0cdbca8c35e3c6e4",
+        "signature": "42102aaeb1bfec213be1e9777466a6d551eeba8567fed18c0cdbca8c35e3c6e4"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2018.intl.d.ts": {
+        "version": "1b820b57379c726f94af50cd60053674af53ff9d079c1563cc70071e8b757dd0",
+        "signature": "1b820b57379c726f94af50cd60053674af53ff9d079c1563cc70071e8b757dd0"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2018.promise.d.ts": {
+        "version": "efe049114bad1035b0aa9a4a0359f50ab776e3897c411521e51d3013079cbd62",
+        "signature": "efe049114bad1035b0aa9a4a0359f50ab776e3897c411521e51d3013079cbd62"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2018.regexp.d.ts": {
+        "version": "e7780d04cd4120ee554c665829db2bbdd6b947cbaa3c150b7d9ea74df3beb2e8",
+        "signature": "e7780d04cd4120ee554c665829db2bbdd6b947cbaa3c150b7d9ea74df3beb2e8"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.esnext.intl.d.ts": {
+        "version": "f6e0c89daaf72eac38dfb1d5ef0972183f7f26a68da15bfe5bcb7cfccf0c7db8",
+        "signature": "f6e0c89daaf72eac38dfb1d5ef0972183f7f26a68da15bfe5bcb7cfccf0c7db8"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.esnext.bigint.d.ts": {
+        "version": "63b66918290d794f73832a6d0325be5026236674fe8c0cb0b68d162000d7bbe8",
+        "signature": "63b66918290d794f73832a6d0325be5026236674fe8c0cb0b68d162000d7bbe8"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/commander/typings/index.d.ts": {
+        "version": "ce0594a0432dce2f4e9f6130d538a52d6292ca323e729b75d8e0febd9134dc65",
+        "signature": "ce0594a0432dce2f4e9f6130d538a52d6292ca323e729b75d8e0febd9134dc65"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts": {
+        "version": "4025cf62742c5bb3d383c8a62342481622c87e3397ea5e7b7baab18b9efd5798",
+        "signature": "4025cf62742c5bb3d383c8a62342481622c87e3397ea5e7b7baab18b9efd5798"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts": {
+        "version": "b6d3763d7f9ce84118df4340505c24384267ccb48fa8772852260cb5ed4617c2",
+        "signature": "b6d3763d7f9ce84118df4340505c24384267ccb48fa8772852260cb5ed4617c2"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts": {
+        "version": "0c75b204aed9cf6ff1c7b4bed87a3ece0d9d6fc857a6350c0c95ed0c38c814e8",
+        "signature": "0c75b204aed9cf6ff1c7b4bed87a3ece0d9d6fc857a6350c0c95ed0c38c814e8"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts": {
+        "version": "187119ff4f9553676a884e296089e131e8cc01691c546273b1d0089c3533ce42",
+        "signature": "187119ff4f9553676a884e296089e131e8cc01691c546273b1d0089c3533ce42"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts": {
+        "version": "45bf6da7cede8211b7d0579deabfa227490dfe8b932a56a962599efc48356e68",
+        "signature": "45bf6da7cede8211b7d0579deabfa227490dfe8b932a56a962599efc48356e68"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts": {
+        "version": "c2d47e5668f89ed8768d306919c42bb88d50d4029d68f58343141360895cfcc0",
+        "signature": "c2d47e5668f89ed8768d306919c42bb88d50d4029d68f58343141360895cfcc0"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts": {
+        "version": "65648639567d214f62c1b21d200c852807e68bdb08311f95ab6f526ef5b98995",
+        "signature": "65648639567d214f62c1b21d200c852807e68bdb08311f95ab6f526ef5b98995"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts": {
+        "version": "00baffbe8a2f2e4875367479489b5d43b5fc1429ecb4a4cc98cfc3009095f52a",
+        "signature": "00baffbe8a2f2e4875367479489b5d43b5fc1429ecb4a4cc98cfc3009095f52a"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts": {
+        "version": "d9e9cc5cc0bad6669e74bdbb8cd555c041d9c4f82886d6aef91ba42d1ac950b1",
+        "signature": "d9e9cc5cc0bad6669e74bdbb8cd555c041d9c4f82886d6aef91ba42d1ac950b1"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts": {
+        "version": "3c92b6dfd43cc1c2485d9eba5ff0b74a19bb8725b692773ef1d66dac48cda4bd",
+        "signature": "3c92b6dfd43cc1c2485d9eba5ff0b74a19bb8725b692773ef1d66dac48cda4bd"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts": {
+        "version": "e34f3f6159b1e23de9bb5521382795aaa5aaed6f53b4702e70a2ec45bc76ddb5",
+        "signature": "e34f3f6159b1e23de9bb5521382795aaa5aaed6f53b4702e70a2ec45bc76ddb5"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts": {
+        "version": "c84107ce3522799b7a821463b1743ef230669093b2746afd1e817fcbb5885e67",
+        "signature": "c84107ce3522799b7a821463b1743ef230669093b2746afd1e817fcbb5885e67"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts": {
+        "version": "bbf144d4354e2aaa6439f32761f3ee798cc68d1600adab6e2a596f25269f106d",
+        "signature": "bbf144d4354e2aaa6439f32761f3ee798cc68d1600adab6e2a596f25269f106d"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/mustache/index.d.ts": {
+        "version": "940774e1da806a4e8d18ce3b5c8ceead82a6e5e188a45575007ca7c8f84a4d76",
+        "signature": "940774e1da806a4e8d18ce3b5c8ceead82a6e5e188a45575007ca7c8f84a4d76"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts": {
+        "version": "3828986d627f99cc0c4511a3851f4bfdee30289e874cad315f82bcb9b317a9a7",
+        "signature": "bb7fd87bb15844ad694abf678ce04fa84ecdf7fc8386c68d31b161132f7f6b36"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/options/options.ts": {
+        "version": "dce8a8246821bf51faef660194f93b21ba0dac0b0c582ef06d432202197400ba",
+        "signature": "662e13a3bf7d4cd9153437563c3cf658a7a60d1cb606f316274e3b2d310ab35d"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts": {
+        "version": "60ae14a46e25eae89b700a55f5d4c34acbb3dd35e3722e6ffb37ba7e3932d086",
+        "signature": "7524287bc7521d349585f50a84b52feecedcc22a817b1281251d3de5f15d4829"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/object.ts": {
+        "version": "8fa5a6a750d8dd34d6366ef363197a13db6e3072176185db9d74d1efd7b76023",
+        "signature": "94345c2e2663e921de26c74b597e79e7a53f2c1792c8171980562ecd2ccb1a8e"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/reference.ts": {
+        "version": "95ac8a00c1f5177330601d96ec94d620e4b6150d50a69c1a7653114b1de167a7",
+        "signature": "78fdf6810f83fcb8aaadecad7a2bcb3a614e72cc3b6d995c0534986267856e36"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/enum.ts": {
+        "version": "c1ff63afb1c5e650e478dca0a7e883211a7a91333915a566a37600eb61b497d8",
+        "signature": "0526bbeb13595efe7f5fc7249d0b9473a0378610f8a63f7bb672f3a2c8e514a0"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/string.ts": {
+        "version": "4933ffa07f6712759f82466d78f93b4589d535965a9d29bea59d1905dc74d6cd",
+        "signature": "b91103b05dffd55b45116a2964200af0bdad4782531574959583ff14bcf1a317"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/number.ts": {
+        "version": "7d467007b01690b6ed24d3c2cbe2063ecde06708e57d5757e6aa1d644c63a9e4",
+        "signature": "c3c1f1aac030fac3447bcdd25816a2be8d4d5be15661c2f5feba05196d52d25c"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/boolean.ts": {
+        "version": "cef404a780428e6f32b6c3f998fcec3c4e98b761b0c90ac59e00d1ea11b619cc",
+        "signature": "a1fabbc8bfbec1f1dec1c168147a4c0f665fa59c0e7e5c0e9cf9cf3e17849efa"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/array.ts": {
+        "version": "26f643fe66ee34ce560c48df8a545519b8f41ec425a2f74f6f43f1335e7868ea",
+        "signature": "070d526f206c01772ce0a82964d8ece66b171837d167bb98c8a2c5a6f6485784"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/dictionary.ts": {
+        "version": "c09d17a1babd2dbcbfe20a79122031eda9f5c8db0ecc434c588afd8480031274",
+        "signature": "05f44e9845e0d9321a7c7b2616c8d90b6a48815c8d622e40b08dbc605452e95a"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/any.ts": {
+        "version": "db0cba1e29958d778c4e17d817ddf7450c3fba95c3b2160338d1a0fe47ab80be",
+        "signature": "c4d2bb4be9f25a3c2a16ba59232b1caed860f049a060f878d834ad125b488b40"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/schema.ts": {
+        "version": "f35d2b6405a4f25ec17399a669f93bd7d521d30d4cca364c0f3a24cbc6bc0b3e",
+        "signature": "30e6aff1c4d659e368f2991d7306ad50ab9f38653f1ab481ede654a591408eab"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/void.ts": {
+        "version": "fa4448f183b13201033c1265a06739ea17cd823117faefe1e499977cd8f34b11",
+        "signature": "5734278a09fe488b38780cc02a9cfbd66843cba84f8c3ce5fc80d24898a69302"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typescript.ts": {
+        "version": "222994c44730533d46cbc814637e5cd3002bed5dabf82a3bcfbc7758d138f4d1",
+        "signature": "cba1740713529157c9d5e7b221befd59c9b50d098e946863b272f58c55deef69"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/fp.d.ts": {
+        "version": "1c8b3dbfcf9beae0ee466b20cfcb3bde6fcd1ea68e50a7c0e410723bc0da5f00",
+        "signature": "1c8b3dbfcf9beae0ee466b20cfcb3bde6fcd1ea68e50a7c0e410723bc0da5f00"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/responseType.ts": {
+        "version": "69c39e3c6d3821463a6295ea07c62369b51a3386fab4088cab986bc52166741b",
+        "signature": "021adfbc06acd762ce44b4968ca96fb0333f32384368126144661c35438ac78a"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/version.ts": {
+        "version": "0fbedb79f8f03bd61980cf22b74f876a354b7edf3818f3e4f9dca916afe4ffd3",
+        "signature": "32606c2deb856fe7a0923cf0964aa50b3d7b067f016869fdb347aaf686cbb190"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/parameter.ts": {
+        "version": "1451188ab9981d4ec29fc74f1abcdc19810f70b660f31192c5d6c041172be125",
+        "signature": "6ab178ea81167459eda8001e974fcb71486b263adb8b8e3c6a6e47bdde997a6e"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/headers.ts": {
+        "version": "8d711200067569ae1d27f286c1429f4a88ac4c4daf5608c4a7ea277395d5e116",
+        "signature": "6646d9e0738fb4f98ba0e3395f86c17dd8eec1345b21ca16973e44763d1ed6b9"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/method.ts": {
+        "version": "6ffa6e05e73959b56a979811473136e94e80ff65a01c6f064ec1ebd24c1965dc",
+        "signature": "b772f0edab3652b7940770190dc8d2e6b87ae186f9f49d50853c1402619dff67"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/definition.ts": {
+        "version": "86d209ff0b51c54cbb2a4ac5bfc90666367f799c405cd117689c5f59a78d5127",
+        "signature": "bc9507bca0706d37c878f8cb781e979c18bad89c08c9bc9698e86a161ced3370"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/operation.ts": {
+        "version": "2d700917f4f06efb5a83ad1ba54326bff661cdcf260dc59eb473ed89aaa84664",
+        "signature": "cf66563e2251b21b9a4c05825ae2c039d3a86028f863de5942f048bed6dbfcb3"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/getViewForSwagger2.ts": {
+        "version": "c5e61ad4ccbc1d93ed297c5b71fc6bed010904bafc44928e6c6487fd60252511",
+        "signature": "c46b5feb98e8c477869f9c4cb58fd11c95f96073971df57e1c81ca9b65aea16f"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/transform/transformToCodeWithMustache.ts": {
+        "version": "7dea1699b5f643d066bdcb6ee8575200ce23af33f40677d8d77f086d3b8a7c77",
+        "signature": "ca172815c5823d5f7532ad67e052bbf75116de2a920e1b18897d2cc2712a0a49"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/js-beautify/index.d.ts": {
+        "version": "6517524674777d1111e3254fdaaeac8a6eaa0183e266e1b9600d4d5b20ef38f9",
+        "signature": "6517524674777d1111e3254fdaaeac8a6eaa0183e266e1b9600d4d5b20ef38f9"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/enhance/beautify.ts": {
+        "version": "75b2ec499f0c483f25ba183709b846686c86bec1b16a9a0e302cbb95a76c2c0a",
+        "signature": "6ef7989795a02e826916ab7827a3c272232ecbd34000931edbee2b74a211c2c3"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/enhance/index.ts": {
+        "version": "24fa40403b5bca414d8d57038e97d0f71a841f0dd25174560bed64756e05b10e",
+        "signature": "fa0b50b5dfff300dfbe794702a8fca51a3d05338eac68a61967c7e6ac5c4b113"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/codegen.ts": {
+        "version": "38dc58af86bc5590e8377eaab4ebaad81a5b7551cda0e8bf68d3be03e6f82370",
+        "signature": "1c2ebd841a8b4a2d5c61c5c23ae9a3871687dfba6996b3423de4023fcbdb09a4"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/cli.ts": {
+        "version": "1f36ba094b30f477960c1dce7592fe00df5ff5f5a46d35ceae2e81f6fa24dab1",
+        "signature": "07e1bab322fbea936a00ec149ad924a0d46aa4c8de79147e59c11d25bd0ca9e6"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/codegen.test.ts": {
+        "version": "98e0bc052ee8e6d898e5fdc405d81429f0ef067e3dcfa34f48c29c855aafda29",
+        "signature": "5fe5037c6e75187a51e9133cb604e37114e4b0f9e32b2a4c781c1d1ca1b22292"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/getViewForSwagger2.test.ts": {
+        "version": "e197193c31acab70c572b902bae52863d70cafb2269119015de903a08b152a40",
+        "signature": "18e5cfbc24bb34e3d6f3d65d58ce9eab87e246d852a10d1889a069a104266fa0"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/test-helpers/testHelpers.ts": {
+        "version": "43140fb7c5d072a65ca88cbe61b7a630f756c96046763f493a985652feed01de",
+        "signature": "f8d7d572923ee3938d948f243985509bf0ad931d30037c3826d491640471a786"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typescript.test.ts": {
+        "version": "dd1fd7285f7f02c2d6331908f146f2bf706eff3add5fc3713905b62b445d3b05",
+        "signature": "b99ad2d61d15524e6ff9ae234ddd872b14ab5c4cf5113594301618c30b278dcd"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/enhance/beautify.test.ts": {
+        "version": "43b47548b88fbf0bffaddc7ede267dbd21d9ff187b322aa45a3a082d7c52bb95",
+        "signature": "bbf557ef75a3e14711e6e2c9aca1b1fd0a3c486cc3af223f6f785666b4e3a2fc"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/enhance/index.test.ts": {
+        "version": "90324a2a108f446efa2dc316a6c3bd5f5a2eac40052332f0283fca406e1f9b0f",
+        "signature": "9db15e6d1197e49a6a049b47ea1e26e5e0b0a4edf7d0e19756ca8f49eda8de80"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/options/options.test.ts": {
+        "version": "439d1b1b85dd1b08a9b953a219568b8014dc01eef6012495c7d25f49220219af",
+        "signature": "3bf0cbb0e45b20dd246498ca284a5e25abe75fd7ab4fd9b1a54906f5677154a2"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/transform/transformToCodeWithMustache.test.ts": {
+        "version": "9f5e76164dbf492f48ae35232834cb78ef78fcda3a25c0e82ce6d3420d76a48e",
+        "signature": "f862f6e97727a624de20f6c00bdbaceb94de928ada5af240bb597e69ae48ba67"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/jest/index.d.ts": {
+        "version": "37dbdee3bb13bc254e9d75bbb75569e807369868e5cbd89ce72aa77fb22fcb75",
+        "signature": "37dbdee3bb13bc254e9d75bbb75569e807369868e5cbd89ce72aa77fb22fcb75"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/globals.d.ts": {
+        "version": "0d0f3c7f937ec1706827fef6471d337b2e0d6eb31c3091fa74ff51fdf80c4786",
+        "signature": "0d0f3c7f937ec1706827fef6471d337b2e0d6eb31c3091fa74ff51fdf80c4786"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/assert.d.ts": {
+        "version": "e37e4814461321ef67cbb2f4c9def6be18ff85670e6c665131b320e052905b75",
+        "signature": "e37e4814461321ef67cbb2f4c9def6be18ff85670e6c665131b320e052905b75"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/async_hooks.d.ts": {
+        "version": "138476cfdccbb9e2c7e06602bc216af843a56c4f3469a79106bc660ba94bd66a",
+        "signature": "138476cfdccbb9e2c7e06602bc216af843a56c4f3469a79106bc660ba94bd66a"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/buffer.d.ts": {
+        "version": "fe892fea1e75a442fffb4a604d7eeb451e858787a9f2f01c4e83bf12a3b5048d",
+        "signature": "fe892fea1e75a442fffb4a604d7eeb451e858787a9f2f01c4e83bf12a3b5048d"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/child_process.d.ts": {
+        "version": "c4c8d0ac92a45111376901b82f23e5b2c813e100ac03b682828cd214d0660bf2",
+        "signature": "c4c8d0ac92a45111376901b82f23e5b2c813e100ac03b682828cd214d0660bf2"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/cluster.d.ts": {
+        "version": "d2704553f735d9b9cf31a26cbf4dd085e89b0ec3eec33d684b2517555370b665",
+        "signature": "d2704553f735d9b9cf31a26cbf4dd085e89b0ec3eec33d684b2517555370b665"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/console.d.ts": {
+        "version": "525c8fc510d9632d2a0a9de2d41c3ac1cdd79ff44d3b45c6d81cacabb683528d",
+        "signature": "525c8fc510d9632d2a0a9de2d41c3ac1cdd79ff44d3b45c6d81cacabb683528d"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/constants.d.ts": {
+        "version": "b952021e804dcd9cb5e5552e1ec8bf9f479b61e20da5641e2a542fe77db9a598",
+        "signature": "b952021e804dcd9cb5e5552e1ec8bf9f479b61e20da5641e2a542fe77db9a598"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/crypto.d.ts": {
+        "version": "6b956acd0fa4df8f2723012d18498954438874cc63a0bd639dc470135a782101",
+        "signature": "6b956acd0fa4df8f2723012d18498954438874cc63a0bd639dc470135a782101"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/dgram.d.ts": {
+        "version": "3d1cb0eaae19fa89fe381bba6d5a149d1bf34efc0134220879f57e2061732a6d",
+        "signature": "3d1cb0eaae19fa89fe381bba6d5a149d1bf34efc0134220879f57e2061732a6d"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/dns.d.ts": {
+        "version": "896cd7d58e9d832392a6e374a8f8b64f142089b4d2678a2c90fd8d1d49128677",
+        "signature": "896cd7d58e9d832392a6e374a8f8b64f142089b4d2678a2c90fd8d1d49128677"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/domain.d.ts": {
+        "version": "ae3487bdb9b50c1d8bbeb6b55c8b2b9aa79bbc46d7afbc3483169ad8750c4304",
+        "signature": "ae3487bdb9b50c1d8bbeb6b55c8b2b9aa79bbc46d7afbc3483169ad8750c4304"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts": {
+        "version": "4a419878f025046ff6748d073123b0451849f83b7dbca907037a53e3eaa9bbbb",
+        "signature": "4a419878f025046ff6748d073123b0451849f83b7dbca907037a53e3eaa9bbbb"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/fs.d.ts": {
+        "version": "351eba3b2cf940c98b87cc72014a66cc5f10373bf44fbdc525fae1b22d984aab",
+        "signature": "351eba3b2cf940c98b87cc72014a66cc5f10373bf44fbdc525fae1b22d984aab"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/http.d.ts": {
+        "version": "896c59370c35abd48415751b78ce927eda463a20f1a3921bf3dc4962504ec06e",
+        "signature": "896c59370c35abd48415751b78ce927eda463a20f1a3921bf3dc4962504ec06e"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/http2.d.ts": {
+        "version": "e36a3ca6d86f19ff207dabc61d27088c464f2dc3ffb64b0daf17dc33b85191e6",
+        "signature": "e36a3ca6d86f19ff207dabc61d27088c464f2dc3ffb64b0daf17dc33b85191e6"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/https.d.ts": {
+        "version": "152af7c23ec219f632afa2d861abc65993f56cd39a4f3a4018515dbc05950a74",
+        "signature": "152af7c23ec219f632afa2d861abc65993f56cd39a4f3a4018515dbc05950a74"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/inspector.d.ts": {
+        "version": "3a0bdc4c5b6f84a1abb5356d7a7fa1f96ac6c5b5646eec3ef2b33c1ed095e155",
+        "signature": "3a0bdc4c5b6f84a1abb5356d7a7fa1f96ac6c5b5646eec3ef2b33c1ed095e155"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/module.d.ts": {
+        "version": "03394bf8deb8781b490ae9266a843fbdf00647947d79e25fcbf1d89a9e9c8a66",
+        "signature": "03394bf8deb8781b490ae9266a843fbdf00647947d79e25fcbf1d89a9e9c8a66"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/net.d.ts": {
+        "version": "56a15cc211894d79aa44cbb46c276bfd3f10458a61bff2dec99114db8a7e71e3",
+        "signature": "56a15cc211894d79aa44cbb46c276bfd3f10458a61bff2dec99114db8a7e71e3"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/os.d.ts": {
+        "version": "0ab49f803fa1d0f26682096e87ae239be05fee89ac538d30c59ab5a15bd38e6a",
+        "signature": "0ab49f803fa1d0f26682096e87ae239be05fee89ac538d30c59ab5a15bd38e6a"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/path.d.ts": {
+        "version": "61c84c3b0eb6e60196d15ae5e21793a1d4241c547f0bdd0529ffae838d1a073c",
+        "signature": "61c84c3b0eb6e60196d15ae5e21793a1d4241c547f0bdd0529ffae838d1a073c"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/perf_hooks.d.ts": {
+        "version": "981192e57b0e159c977f1d8e8b8576e9d6b4e013b902e9c0d4b178cb47e2dc86",
+        "signature": "981192e57b0e159c977f1d8e8b8576e9d6b4e013b902e9c0d4b178cb47e2dc86"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/process.d.ts": {
+        "version": "3a8848a9c307429b861402cc69bc472ffe0c05b86474fc158723169161e16389",
+        "signature": "3a8848a9c307429b861402cc69bc472ffe0c05b86474fc158723169161e16389"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/punycode.d.ts": {
+        "version": "eeb0d1ad28e70773ac57ae9fe939c3bad6af2525a463c28f9ec31b5953de6735",
+        "signature": "eeb0d1ad28e70773ac57ae9fe939c3bad6af2525a463c28f9ec31b5953de6735"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/querystring.d.ts": {
+        "version": "8969e0b4d22ca77ad011c8fc4a25ec5d515bdfae4ecbd22608ed0d5c38829c1e",
+        "signature": "8969e0b4d22ca77ad011c8fc4a25ec5d515bdfae4ecbd22608ed0d5c38829c1e"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/readline.d.ts": {
+        "version": "544728a999d35afc7b9e6d7420fb10046c16fcc5cb54fef21d2f5de78bf98830",
+        "signature": "544728a999d35afc7b9e6d7420fb10046c16fcc5cb54fef21d2f5de78bf98830"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/repl.d.ts": {
+        "version": "d0b0b533dc34ff7ffd019665fdc2b2aeae717bc1347e17a5bdc4d6572b5c109a",
+        "signature": "d0b0b533dc34ff7ffd019665fdc2b2aeae717bc1347e17a5bdc4d6572b5c109a"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/stream.d.ts": {
+        "version": "c07900741b39a32e2167f08aadcdea84b077727f828f27ceebf534715ea66d97",
+        "signature": "c07900741b39a32e2167f08aadcdea84b077727f828f27ceebf534715ea66d97"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/string_decoder.d.ts": {
+        "version": "17e157df6125098a1a34eb4d201ee4ac03bbe97e471ab5627bb2c40fce555948",
+        "signature": "17e157df6125098a1a34eb4d201ee4ac03bbe97e471ab5627bb2c40fce555948"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/timers.d.ts": {
+        "version": "b40652bf8ce4a18133b31349086523b219724dca8df3448c1a0742528e7ad5b9",
+        "signature": "b40652bf8ce4a18133b31349086523b219724dca8df3448c1a0742528e7ad5b9"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/tls.d.ts": {
+        "version": "68f639766f4b9d5c832bbca1203955969a8686137a4a197285dd64519cc26e58",
+        "signature": "68f639766f4b9d5c832bbca1203955969a8686137a4a197285dd64519cc26e58"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/trace_events.d.ts": {
+        "version": "978aecd2e6bc2ac094e9a35eda98ff8586713857b3655e7c98ca5ed8f7d50662",
+        "signature": "978aecd2e6bc2ac094e9a35eda98ff8586713857b3655e7c98ca5ed8f7d50662"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/tty.d.ts": {
+        "version": "3a59044813b24482ad7a7963bbee6b62507561969e273fbdc992ed9bc948fe13",
+        "signature": "3a59044813b24482ad7a7963bbee6b62507561969e273fbdc992ed9bc948fe13"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/url.d.ts": {
+        "version": "431151f55411c3f27cf539b987a7d1de453188ed58e54bc946183d280d3444a2",
+        "signature": "431151f55411c3f27cf539b987a7d1de453188ed58e54bc946183d280d3444a2"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts": {
+        "version": "766b7f1a0e67ed1106ae02583408d9e3a820201c4539f9bed8be8e4f07ee6e92",
+        "signature": "766b7f1a0e67ed1106ae02583408d9e3a820201c4539f9bed8be8e4f07ee6e92"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/v8.d.ts": {
+        "version": "e880a08fbb0d9ee2f733f9183f4d1bdb75bc9e0e64060a8a1fc30540791fcded",
+        "signature": "e880a08fbb0d9ee2f733f9183f4d1bdb75bc9e0e64060a8a1fc30540791fcded"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/vm.d.ts": {
+        "version": "f98df5ec124f441b465332271d0b083aeec815cd3c92d9249b9739e6318477a9",
+        "signature": "f98df5ec124f441b465332271d0b083aeec815cd3c92d9249b9739e6318477a9"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/worker_threads.d.ts": {
+        "version": "e761c833140e3ab6f9deab37fe034154f3eb15547dce61395d9b0b1f130f3fa3",
+        "signature": "e761c833140e3ab6f9deab37fe034154f3eb15547dce61395d9b0b1f130f3fa3"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/zlib.d.ts": {
+        "version": "58257a0147702ab415ed18164557a0feb9c5d1351792ea293a876e6b7ed0c559",
+        "signature": "58257a0147702ab415ed18164557a0feb9c5d1351792ea293a876e6b7ed0c559"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/base.d.ts": {
+        "version": "6622f76993bdfeaacb947ba7c4cf26f2e5c5194194d02d792c3cba4174cd8fce",
+        "signature": "6622f76993bdfeaacb947ba7c4cf26f2e5c5194194d02d792c3cba4174cd8fce"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts": {
+        "version": "4f54f0a9dd3b644c99ec32b32f8804d5978bc854799b228ae9c467bf3c84c64c",
+        "signature": "4f54f0a9dd3b644c99ec32b32f8804d5978bc854799b228ae9c467bf3c84c64c"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/globals.d.ts": {
+        "version": "ce6b191c382ee19f23678b8c364484627bcf424e8f408357a2f5530fb8d52a45",
+        "signature": "ce6b191c382ee19f23678b8c364484627bcf424e8f408357a2f5530fb8d52a45"
+      },
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/index.d.ts": {
+        "version": "765fc34423b93c2ab763670d8d11d99e5f47387c13c161d6f1640dd6d91b7d1c",
+        "signature": "765fc34423b93c2ab763670d8d11d99e5f47387c13c161d6f1640dd6d91b7d1c"
+      }
+    },
+    "options": {
+      "target": 2,
+      "lib": [
+        "lib.es2017.d.ts",
+        "lib.es2015.d.ts"
+      ],
+      "composite": true,
+      "strict": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "declarationMap": true,
+      "inlineSourceMap": true,
+      "inlineSources": false,
+      "declaration": true,
+      "module": 1,
+      "moduleResolution": 2,
+      "preserveWatchOutput": true,
+      "rootDir": "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src",
+      "outDir": "/Volumes/DAT_CamelCase/swagger-typescript-codegen/lib",
+      "project": "tsconfig.json",
+      "configFilePath": "/Volumes/DAT_CamelCase/swagger-typescript-codegen/tsconfig.json"
+    },
+    "referencedMap": {
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es5.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2016.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2017.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2018.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.core.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.collection.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.generator.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.iterable.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.promise.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.proxy.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.reflect.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.symbol.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2016.array.include.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2017.object.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2017.string.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2017.intl.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2018.intl.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2018.promise.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2018.regexp.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.esnext.intl.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.esnext.bigint.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/commander/typings/index.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/mustache/index.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/options/options.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/mustache/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/object.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typescript.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/reference.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/enum.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/string.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/number.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/boolean.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/array.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typescript.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/dictionary.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typescript.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/any.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/schema.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/void.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typescript.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/object.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/reference.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/enum.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/string.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/number.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/boolean.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/array.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/dictionary.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/any.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/schema.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/void.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/fp.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/responseType.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typescript.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/fp.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/version.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/parameter.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/fp.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typescript.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/headers.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/method.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/options/options.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/responseType.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/version.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/parameter.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/headers.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/fp.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/definition.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typescript.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/operation.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/fp.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/getViewForSwagger2.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/options/options.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/method.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/definition.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/operation.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/transform/transformToCodeWithMustache.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/fs.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/mustache/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/options/options.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/path.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/js-beautify/index.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/enhance/beautify.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/js-beautify/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/enhance/index.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/enhance/beautify.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/codegen.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/options/options.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/getViewForSwagger2.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/transform/transformToCodeWithMustache.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/enhance/index.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/cli.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/fs.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/commander/typings/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/codegen.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/codegen.test.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/codegen.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/transform/transformToCodeWithMustache.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/getViewForSwagger2.test.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/options/options.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/getViewForSwagger2.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/test-helpers/testHelpers.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typescript.test.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typescript.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/test-helpers/testHelpers.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/enhance/beautify.test.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/enhance/beautify.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/enhance/index.test.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/enhance/index.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/enhance/beautify.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/options/options.test.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/options/options.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/mustache/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/transform/transformToCodeWithMustache.test.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/mustache/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/path.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/fs.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/transform/transformToCodeWithMustache.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/getViewForSwagger2.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/jest/index.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/globals.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/assert.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/async_hooks.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/buffer.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/child_process.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/net.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/cluster.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/child_process.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/net.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/console.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/constants.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/crypto.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/dgram.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/net.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/dns.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/dns.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/domain.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/fs.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/url.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/http.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/net.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/url.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/http2.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/fs.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/net.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/tls.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/url.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/http.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/https.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/tls.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/http.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/url.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/inspector.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/module.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/net.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/dns.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/os.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/path.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/perf_hooks.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/async_hooks.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/process.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/punycode.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/querystring.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/readline.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/repl.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/readline.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/vm.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/stream.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/string_decoder.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/timers.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/tls.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/crypto.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/dns.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/net.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/trace_events.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/tty.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/net.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/url.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/querystring.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/v8.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/vm.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/worker_threads.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/zlib.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/base.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/globals.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/assert.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/async_hooks.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/buffer.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/child_process.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/cluster.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/console.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/constants.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/crypto.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/dgram.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/dns.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/domain.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/fs.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/http.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/http2.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/https.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/inspector.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/module.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/net.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/os.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/path.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/perf_hooks.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/process.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/punycode.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/querystring.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/readline.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/repl.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/string_decoder.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/timers.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/tls.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/trace_events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/tty.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/url.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/v8.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/vm.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/worker_threads.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/zlib.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/globals.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/globals.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/index.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/base.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/globals.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts"
+      ]
+    },
+    "exportedModulesMap": {
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es5.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2016.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2017.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2018.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.core.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.collection.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.generator.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.iterable.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.promise.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.proxy.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.reflect.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.symbol.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2016.array.include.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2017.object.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2017.string.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2017.intl.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2018.intl.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2018.promise.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2018.regexp.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.esnext.intl.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.esnext.bigint.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/commander/typings/index.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/mustache/index.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/options/options.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/mustache/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/object.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/reference.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/enum.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/string.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/number.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/boolean.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/array.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/dictionary.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/any.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/schema.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/void.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typescript.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/fp.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/responseType.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/parameter.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/headers.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/method.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/parameter.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/headers.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/options/options.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/definition.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/operation.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/getViewForSwagger2.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/method.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/definition.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/options/options.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/transform/transformToCodeWithMustache.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/options/options.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/js-beautify/index.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/enhance/index.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/enhance/beautify.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/codegen.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/getViewForSwagger2.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/transform/transformToCodeWithMustache.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/options/options.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/test-helpers/testHelpers.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/jest/index.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/globals.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/assert.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/async_hooks.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/buffer.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/child_process.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/net.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/cluster.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/child_process.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/net.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/console.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/constants.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/crypto.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/dgram.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/net.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/dns.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/dns.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/domain.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/fs.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/url.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/http.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/net.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/url.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/http2.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/fs.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/net.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/tls.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/url.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/http.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/https.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/tls.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/http.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/url.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/inspector.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/module.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/net.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/dns.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/os.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/path.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/perf_hooks.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/async_hooks.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/process.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/punycode.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/querystring.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/readline.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/repl.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/readline.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/vm.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/stream.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/string_decoder.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/timers.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/tls.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/crypto.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/dns.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/net.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/trace_events.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/tty.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/net.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/url.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/querystring.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/v8.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/vm.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/worker_threads.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/zlib.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/base.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/globals.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/assert.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/async_hooks.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/buffer.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/child_process.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/cluster.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/console.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/constants.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/crypto.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/dgram.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/dns.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/domain.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/fs.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/http.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/http2.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/https.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/inspector.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/module.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/net.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/os.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/path.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/perf_hooks.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/process.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/punycode.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/querystring.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/readline.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/repl.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/string_decoder.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/timers.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/tls.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/trace_events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/tty.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/url.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/v8.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/vm.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/worker_threads.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/zlib.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/globals.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/globals.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/index.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/base.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/globals.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts"
+      ]
+    },
+    "semanticDiagnosticsPerFile": [
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es5.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2016.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2017.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2018.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.core.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.collection.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.generator.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.iterable.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.promise.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.proxy.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.reflect.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.symbol.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2016.array.include.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2017.object.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2017.string.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2017.intl.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2018.intl.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2018.promise.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.es2018.regexp.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.esnext.intl.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/typescript/lib/lib.esnext.bigint.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/commander/typings/index.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/mustache/index.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/swagger/Swagger.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/options/options.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typespec.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/object.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/reference.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/enum.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/string.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/number.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/boolean.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/array.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/dictionary.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/any.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/schema.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/type-mappers/void.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typescript.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/lodash/ts3.1/fp.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/responseType.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/version.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/parameter.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/headers.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/method.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/definition.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/view-data/operation.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/getViewForSwagger2.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/transform/transformToCodeWithMustache.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/js-beautify/index.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/enhance/beautify.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/enhance/index.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/codegen.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/cli.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/codegen.test.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/getViewForSwagger2.test.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/test-helpers/testHelpers.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/typescript.test.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/enhance/beautify.test.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/enhance/index.test.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/options/options.test.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/src/transform/transformToCodeWithMustache.test.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/jest/index.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/globals.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/assert.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/async_hooks.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/buffer.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/child_process.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/cluster.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/console.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/constants.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/crypto.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/dgram.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/dns.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/domain.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/events.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/fs.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/http.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/http2.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/https.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/inspector.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/module.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/net.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/os.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/path.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/perf_hooks.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/process.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/punycode.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/querystring.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/readline.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/repl.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/stream.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/string_decoder.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/timers.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/tls.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/trace_events.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/tty.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/url.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/util.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/v8.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/vm.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/worker_threads.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/zlib.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/base.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/util.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/globals.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-typescript-codegen/node_modules/@types/node/ts3.2/index.d.ts"
+    ]
+  },
+  "version": "3.5.2"
+}

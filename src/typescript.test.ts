@@ -355,7 +355,7 @@ describe("convertType", () => {
       swaggerType = makeSwaggerType({
         type: "object",
         additionalProperties: false
-      });
+      } as any);
 
       expect(convertType(swaggerType, swagger)).toEqual({
         ...emptyTypeSpecWithDefaults,

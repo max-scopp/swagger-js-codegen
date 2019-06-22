@@ -1,5 +1,5 @@
 {
-  "name": "swagger-typescript-codegen",
+  "name": "@timeless/swagger-ts",
   "main": "./lib/codegen.js",
   "version": "1.10.3",
   "description": "A Swagger Codegenerator tailored for typescript.",
@@ -28,8 +28,8 @@
     "rest"
   ],
   "author": {
-    "name": "Marius Tennøe",
-    "email": "mariust@outlook.com"
+    "name": "Maximilian Scopp",
+    "email": "me@maxscopp.de"
   },
   "license": "Apache-2.0",
   "homepage": "https://github.com/mtennoe/swagger-typescript-codegen",

@@ -4,36 +4,56 @@
 /// <reference path="{{&.}}" />
 {{/imports}}
 
-import * as request from "superagent";
-import { SuperAgentStatic, SuperAgentRequest, Response } from "superagent";
+import fetch from "node-fetch";
 
 export type RequestHeaders = {
     [header: string]: string;
 }
-export type RequestHeadersHandler = (headers: RequestHeaders) => RequestHeaders;
 
-export type ConfigureAgentHandler = (agent: SuperAgentStatic) => SuperAgentStatic;
+export type RequestHeadersHandler = (headers: Headers) => Headers;
 
-export type ConfigureRequestHandler = (agent: SuperAgentRequest) => SuperAgentRequest;
+export type ConfigureRequestHandler = (agent: Request) => Request;
 
-export type CallbackHandler = (err: any, res?: request.Response) => void;
+export type CallbackHandler = (err: any, res?: Response) => void;
 
 {{#definitions}}
 export type {{&name}} = {{#tsType}}{{> type}}{{/tsType}};
-
 {{/definitions}}
 
 export type Logger = { log: (line: string) => any };
 
-export interface ResponseWithBody<S extends number, T> extends Response {
-    status: S;
-    body: T;
+export interface ResponseWithBody<S extends number, T> {
+    readonly headers: Headers;
+    readonly ok: boolean;
+    readonly redirected: boolean;
+    readonly status: S;
+    readonly statusText: string;
+    readonly trailer: Promise<Headers>;
+    readonly type: ResponseType;
+    readonly url: string;
+    readonly body: T;
+    clone(): Response;
 }
 
 export interface CommonRequestOptions {
   $queryParameters?: {[param: string]: any};
   $domain?: string;
   $path?: string | ((path: string) => string);
+}
+
+type Definition = {
+    path: string,
+    method: string,
+    callable: (ctx: {{&className}}) => (parameters: {[k:string]: any}) => Promise<any>,
+    params: {
+        [k: string]: RegExp | string | ((p: { [k: string]: any }) => string)
+    },
+    headers: {[k:string]: string},
+    body?: (p: {[k:string]:any}) => string,
+    form?: {
+        [k: string]: string | ((p: { [k: string]: any }) => string)
+    },
+    required?: string[]
 }
 
 /**
@@ -46,12 +66,44 @@ export class {{&className}} {
     private domain: string = "{{&domain}}";
     private errorHandlers: CallbackHandler[] = [];
     private requestHeadersHandler?: RequestHeadersHandler;
-    private configureAgentHandler?: ConfigureAgentHandler;
     private configureRequestHandler?: ConfigureRequestHandler;
+
+    private static readonly entries: {[k:number]: Definition} = {
+        {{#methods}}
+            {{> map}}
+        {{/methods}}
+    };
+
+    private static readonly idMapping: {[k: string]: number[]} = (() => {
+        const ids = [
+        {{#methods}}
+            ['{{&path}}', {{position}}],
+        {{/methods}}
+        ];
+
+        let mapping = {};
+        ids
+            .map(([path, position]) => [(path as string).toLowerCase(), position])
+            .map(([path, position]) =>
+                mapping[path] ?
+                mapping[path].push(position) : mapping[path] = [position]
+            );
+
+        return mapping;
+    })();
 
     constructor(domain?: string, private logger?: Logger) {
         if(domain) {
             this.domain = domain;
+        }
+    }
+
+    isUnexpected(errorMessage, reject?) {
+        const error = new Error('Unexpected Internal Error: ' + errorMessage);
+        if(reject) {
+            reject(error);
+        } else {
+            throw error;
         }
     }
 
@@ -67,64 +119,113 @@ export class {{&className}} {
         this.requestHeadersHandler = handler;
     }
 
-    setConfigureAgentHandler(handler: ConfigureAgentHandler) {
-        this.configureAgentHandler = handler;
-    }
-
     setConfigureRequestHandler(handler: ConfigureRequestHandler) {
         this.configureRequestHandler = handler;
     }
 
-    private request(method: string, url: string, body: any, headers: RequestHeaders, queryParameters: any, form: any, reject: CallbackHandler, resolve: CallbackHandler) {
+/**
+ * Helper function that will resolve the given URL to the connecting method to execute with.
+ * You can further specify what definitive endpoint you want by providing a `method`.
+ * @param {(string)} [url] - Case sensitive URL to look foor
+ * @param {(string)} [method] - The Method you want to execute with
+ * @return {function|function[]|null} - This function tries really hard to give you only **one** result, but it _may_ return a list - depending on `method`
+ */
+    getMethodForUrl(url: string, method?: string) {
+        if(!url.startsWith('/')) {
+            url = '/' + url;
+        }
+
+        const candidates = {{&className}}.idMapping[url.toLowerCase()];
+        let resolvableIds = candidates
+
+        if(method) {
+            resolvableIds = candidates.filter((candidateId) => {
+                const definition = {{&className}}.entries[candidateId];
+                return definition.method === method;
+            })
+        }
+
+        if(!resolvableIds) {
+            throw new Error('Impossible to resolve that URL. Black Magic!');
+        }
+
+        const resolved = resolvableIds.map(id => {{&className}}.entries[id].callable(this).bind(this));
+
+        if(resolved.length === 1) {
+            return resolved[0];
+        } else {
+            // shouldn't happend, but theoratically...
+            return resolved;
+        }
+
+    }
+
+    private request(method: string, url: string, body: any, headers: Headers, reject: CallbackHandler, resolve: CallbackHandler) {
         if(this.logger) {
-          this.logger.log(`Call ${method} ${url}`);
+            this.logger.log(`Call ${method} ${url}`);
         }
 
-        const agent = this.configureAgentHandler
-            ? this.configureAgentHandler(request.default)
-            : request.default;
-
-        let req = agent(method, url);
-        if (this.configureRequestHandler) {
-            req = this.configureRequestHandler(req);
-        }
-     
-        req = req.query(queryParameters);
-
-        if(body) {
-            req.send(body);
-        
-            if(typeof(body) === 'object' && !(body.constructor.name === 'Buffer')) {
-                headers['Content-Type'] = 'application/json';
+        if(body && Object.keys(body).length) {
+            if(typeof(body) === 'object' && !headers['Content-Type']) {
+                headers.set('Content-Type', 'application/json');
             }
-        }
-
-        if(Object.keys(form).length > 0) {
-            req.type('form');
-            req.send(form);
         }
 
         if (this.requestHeadersHandler) {
             headers = this.requestHeadersHandler({...headers});
         }
 
-        Object.keys(headers).forEach(key => {
-            req.set(key, headers[key]);
+        let req = new Request(url, {
+            method,
+            headers,
+            body
         });
 
-        req.end((error, response) => {
-            if(error || !response.ok) {
-                reject(error);
+        if (this.configureRequestHandler) {
+            req = this.configureRequestHandler(req);
+        }
+
+        fetch(req).then((response) => {
+            if(!response.ok) {
+                // if no error, but response not ok, hope that the body contains details
+                const error = new Error('Response status not OK: ' + response.status + ' ' + response.statusText);
+
                 this.errorHandlers.forEach(handler => handler(error));
+                reject(error);
             } else {
-                resolve(response);
+                const acceptedJson = /application\/json/.test(headers.get('Accept'));
+                const derivedResponse = new class Response {
+                    constructor() {
+                        this.body = response.body;
+                        this.bodyUsed = response.bodyUsed;
+                        this.headers = response.headers;
+                        this.ok = response.ok;
+                        this.redirected = response.redirected;
+                        this.status = response.status;
+                        this.statusText = response.statusText;
+                        this.type = response.type;
+                        this.url = response.url;
+                    }
+                };
+
+                if(acceptedJson) {
+                    response.json().then(parsed => {
+                        derivedResponse.body = parsed
+                        derivedResponse.bodyUsed = true
+                        resolve(derivedResponse);
+                    });
+                } else {
+                    resolve(derivedResponse);
+                }
             }
-        });
+        }).catch((err) => {
+            this.errorHandlers.forEach(handler => handler(err));
+            reject(err)
+        })
     }
 
 {{#methods}}
     {{> method}}
-
 {{/methods}}
 }
 

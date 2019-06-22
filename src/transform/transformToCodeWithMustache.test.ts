@@ -20,6 +20,10 @@ describe("transformToCodeWithMustache", (): void => {
         path.join(DEFAULT_TEMPLATE_PATH, "class.mustache"),
         "utf-8"
       ),
+      map: readFileSync(
+        path.join(DEFAULT_TEMPLATE_PATH, "map.mustache"),
+        "utf-8"
+      ),
       method: readFileSync(
         path.join(DEFAULT_TEMPLATE_PATH, "method.mustache"),
         "utf-8"
