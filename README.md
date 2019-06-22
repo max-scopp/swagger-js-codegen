@@ -1,5 +1,12 @@
 # Swagger to Typescript Codegen
 
+# Differences and why we have our own module
+
+The Templates are shiny-clean now, very memory efficient, return with correct typings AAAAAND it includes a lookup function.
+Future fun fact: This was a requirement for the very first project and no one seemed to needed these things.
+
+---
+
 [![Build Status](https://travis-ci.com/mtennoe/swagger-typescript-codegen.svg?branch=master)](https://travis-ci.com/mtennoe/swagger-typescript-codegen)
 
 This package generates a TypeScript class from a [swagger specification file](https://github.com/wordnik/swagger-spec). The code is generated using [mustache templates](https://github.com/mtennoe/swagger-js-codegen/tree/master/lib/templates) and is quality checked by [jshint](https://github.com/jshint/jshint/) and beautified by [js-beautify](https://github.com/beautify-web/js-beautify).
