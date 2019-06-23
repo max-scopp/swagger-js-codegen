@@ -194,7 +194,7 @@ export class {{&className}} {
                 reject(error);
             } else {
                 const acceptedJson = /application\/json/.test(headers.get('Accept'));
-                const derivedResponse = new class Response {
+                const derivedResponse = new class SwaggerResponse {
                     constructor() {
                         this.body = response.body;
                         this.bodyUsed = response.bodyUsed;
@@ -208,7 +208,13 @@ export class {{&className}} {
                     }
                 };
 
-                if(acceptedJson) {
+                if(response.status === 204) {
+                    response.text().then(parsed => {
+                        derivedResponse.body = parsed
+                        derivedResponse.bodyUsed = true
+                        resolve(derivedResponse);
+                    });
+                } else if (acceptedJson) {
                     response.json().then(parsed => {
                         derivedResponse.body = parsed
                         derivedResponse.bodyUsed = true
