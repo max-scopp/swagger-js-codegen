@@ -16,8 +16,25 @@ export type ConfigureRequestHandler = (agent: Request) => Request;
 
 export type CallbackHandler = (err: any, res?: Response) => void;
 
+abstract class Model<T> {
+    constructor(values: Partial<T>) {
+        Object.entries(values)
+            .map(([key, value]) => this[key] = value);
+    }
+}
+
 {{#definitions}}
-export interface {{&name}} = {{#tsType}}{{> type}}{{/tsType}};
+
+    {{#isClass}}
+        export interface I{{&name}}
+            {{#tsType}}{{> type}}{{/tsType}}
+
+        export class {{&name}} extends Model<I{{&name}}>
+            {{#tsType}}{{> type}}{{/tsType}}
+    {{/isClass}}
+    {{^isClass}}
+        export type {{&name}} = {{#tsType}}{{> type}}{{/tsType}};
+    {{/isClass}}
 {{/definitions}}
 
 export type Logger = { log: (line: string) => any };
