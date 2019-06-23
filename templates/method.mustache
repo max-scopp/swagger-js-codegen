@@ -157,6 +157,6 @@ if(!discardParameters) {
         body = form;
     }
 
-    this.request(method, url.toString(), body, headers, reject, resolve);
+    this.request<{{&responseTypes}}>(method, url.toString(), body, headers, reject, resolve);
 });
 }

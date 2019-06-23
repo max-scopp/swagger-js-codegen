@@ -17,10 +17,11 @@ export type ConfigureRequestHandler = (agent: Request) => Request;
 export type CallbackHandler = (err: any, res?: Response) => void;
 
 {{#definitions}}
-export type {{&name}} = {{#tsType}}{{> type}}{{/tsType}};
+export interface {{&name}} = {{#tsType}}{{> type}}{{/tsType}};
 {{/definitions}}
 
 export type Logger = { log: (line: string) => any };
+
 
 export interface ResponseWithBody<S extends number, T> {
     readonly headers: Headers;
@@ -32,8 +33,39 @@ export interface ResponseWithBody<S extends number, T> {
     readonly type: ResponseType;
     readonly url: string;
     readonly body: T;
-    clone(): Response;
+    readonly bodyUsed: boolean;
+    clone (): SwaggerResponse<T>;
 }
+
+class SwaggerResponse<T> implements ResponseWithBody<number, T> {
+    headers: Headers;
+    ok: boolean;
+    redirected: boolean;
+    status: number;
+    statusText: string;
+    trailer: Promise<Headers>;
+    type: ResponseType;
+    url: string;
+    body: T;
+    bodyUsed: boolean;
+
+    constructor(response: Response | SwaggerResponse<T>) {
+        this.body = response.body as T;
+        this.bodyUsed = response.bodyUsed;
+        this.headers = response.headers;
+        this.ok = response.ok;
+        this.redirected = response.redirected;
+        this.status = response.status;
+        this.statusText = response.statusText;
+        this.type = response.type;
+        this.url = response.url;
+    }
+
+    clone () {
+        return new SwaggerResponse<T>(this);
+    }
+}
+
 
 export interface CommonRequestOptions {
   $queryParameters?: {[param: string]: any};
@@ -160,7 +192,7 @@ export class {{&className}} {
 
     }
 
-    private request(method: string, url: string, body: any, headers: Headers, reject: CallbackHandler, resolve: CallbackHandler) {
+    private request<T>(method: string, url: string, body: any, headers: Headers, reject: CallbackHandler, resolve: CallbackHandler) {
         if(this.logger) {
             this.logger.log(`Call ${method} ${url}`);
         }
@@ -194,19 +226,7 @@ export class {{&className}} {
                 reject(error);
             } else {
                 const acceptedJson = /application\/json/.test(headers.get('Accept'));
-                const derivedResponse = new class SwaggerResponse {
-                    constructor() {
-                        this.body = response.body;
-                        this.bodyUsed = response.bodyUsed;
-                        this.headers = response.headers;
-                        this.ok = response.ok;
-                        this.redirected = response.redirected;
-                        this.status = response.status;
-                        this.statusText = response.statusText;
-                        this.type = response.type;
-                        this.url = response.url;
-                    }
-                };
+                const derivedResponse = new SwaggerResponse<T>(response);
 
                 if(response.status === 204) {
                     response.text().then(parsed => {
