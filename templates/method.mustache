@@ -104,7 +104,7 @@ public {{&methodName}}(parameters: {
 const $queryParameters = parameters.$queryParameters;
 
 let body;
-const headers = new Headers(_headers || {});
+const headers = _headers || {}
 const form = new FormData();
 
 if(!discardParameters) {

@@ -186,7 +186,7 @@ export class {{&className}} {
  * @return {function|function[]|null} - This function tries really hard to give you only **one** result, but it _may_ return a list - depending on `method`
  */
     getMethodForUrl(url: string, method?: string) {
-        if(!url.startsWith('/')) {
+        if(!/^\//.test(url)) {
             url = '/' + url;
         }
 
@@ -222,7 +222,7 @@ export class {{&className}} {
 
         if(body && Object.keys(body).length) {
             if(typeof(body) === 'object' && !headers['Content-Type']) {
-                headers.set('Content-Type', 'application/json');
+                headers['Content-Type'] = 'application/json';
             }
         }
 
@@ -248,7 +248,7 @@ export class {{&className}} {
                 this.errorHandlers.forEach(handler => handler(error));
                 reject(error);
             } else {
-                const acceptedJson = /application\/json/.test(headers.get('Accept'));
+                const acceptedJson = /application\/json/.test(headers['Accept']);
                 const derivedResponse = new SwaggerResponse<T>(response);
 
                 if(response.status === 204) {
