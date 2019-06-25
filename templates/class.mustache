@@ -222,7 +222,7 @@ export class {{&className}} {
 
         if(body && Object.keys(body).length) {
             if(typeof(body) === 'object' && !headers['Content-Type']) {
-                headers['Content-Type'] = 'application/json';
+                headers.set('Content-Type', 'application/json');
             }
         }
 
@@ -248,7 +248,7 @@ export class {{&className}} {
                 this.errorHandlers.forEach(handler => handler(error));
                 reject(error);
             } else {
-                const acceptedJson = /application\/json/.test(headers['Accept']);
+                const acceptedJson = /application\/json/.test(headers.get('Accept'));
                 const derivedResponse = new SwaggerResponse<T>(response);
 
                 if(response.status === 204) {
