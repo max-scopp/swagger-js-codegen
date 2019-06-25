@@ -3,7 +3,7 @@ import { Swagger, SwaggerType, SwaggerSchema } from "./swagger/Swagger";
 import { makeObjectTypeSpec } from "./type-mappers/object";
 import { makeReferenceTypeSpec, isReference } from "./type-mappers/reference";
 import { makeEnumTypeSpec, isEnum } from "./type-mappers/enum";
-import { TypeSpec, makeTypeSpecFromSwaggerType } from "./typespec";
+import { TypeSpec } from "./typespec";
 import { makeStringTypeSpec, isString } from "./type-mappers/string";
 import { makeNumberTypeSpec, isNumber } from "./type-mappers/number";
 import { makeBooleanTypeSpec, isBoolean } from "./type-mappers/boolean";
@@ -69,7 +69,6 @@ export function convertSchemaToModelType(
   swagger: Swagger
 ): string | undefined {
   const type = convertType(swaggerType.schema, swagger);
-  let result;
 
   if (!type.isAtomic) {
     if (type.isArray && type.elementType) {
