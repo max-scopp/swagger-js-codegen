@@ -67,19 +67,17 @@ export function convertType(
 export function convertSchemaToModelType(
   swaggerType: SwaggerSchema,
   swagger: Swagger
-): string {
+): string | undefined {
   const type = convertType(swaggerType.schema, swagger);
   let result;
 
   if (!type.isAtomic) {
     if (type.isArray && type.elementType) {
-      result = type.elementType.target;
+      return type.elementType.target;
     } else {
-      result = type.target;
+      return type.target;
     }
   }
-
-  return result || "null";
 }
 
 /**

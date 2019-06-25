@@ -259,7 +259,17 @@ export class {{&className}} {
                     });
                 } else if (acceptedJson) {
                     response.json().then(parsed => {
-                        derivedResponse.body = model ?  new model(parsed) : parsed
+                        let newBody = parsed;
+
+                        if(model) {
+                            if(parsed instanceof Array) {
+                                newBody = parsed.map(item => new model(item));
+                            } else {
+                                newBody = new model(parsed);
+                            }
+                        }
+
+                        derivedResponse.body = newBody
                         derivedResponse.bodyUsed = true
                         resolve(derivedResponse);
                     });

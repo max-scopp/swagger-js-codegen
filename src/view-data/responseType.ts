@@ -202,8 +202,8 @@ export function getSuccessfulResponseModel(
 
     successfulResponseType = convertedType;
   } catch (error) {
-    successfulResponseType = defaultResponseType;
+    successfulResponseType = "null";
   }
 
-  return successfulResponseType;
+  return successfulResponseType || "null";
 }
