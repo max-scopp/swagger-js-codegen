@@ -1,6 +1,12 @@
-import { convertType } from "../typescript";
-import { HttpOperation, Swagger, SwaggerType } from "../swagger/Swagger";
-import { uniq, entries } from "lodash/fp";
+import { entries, uniq } from "lodash/fp";
+
+import {
+  HttpOperation,
+  Swagger,
+  SwaggerSchema,
+  SwaggerType
+} from "../swagger/Swagger";
+import { convertSchemaToModelType, convertType } from "../typescript";
 import { TypeSpec } from "../typespec";
 
 const defaultResponseType = "void";
@@ -39,7 +45,7 @@ export const renderResponseTypes = (
  * @param {HttpOperation} httpOperation - The HttpOperation.
  * @returns {ResponseType<SwaggerType>[]} The response types.
  */
-const responseTypes = (
+export const responseTypes = (
   httpOperation: HttpOperation
 ): ResponseType<SwaggerType>[] =>
   entries(httpOperation.responses).map(kvp => ({
@@ -54,7 +60,7 @@ const responseTypes = (
  * @param {Swagger} swagger - The swagger schema.
  * @returns {ResponseType<TypeSpec>[]} The converted typescript response types.
  */
-const convertResponseTypes = (
+export const convertResponseTypes = (
   swaggerTypes: ResponseType<SwaggerType>[],
   swagger: Swagger
 ): ResponseType<TypeSpec>[] =>
@@ -182,4 +188,22 @@ export function getSuccessfulResponseType(
   }
 
   return [successfulResponseType, successfulResponseTypeIsRef];
+}
+
+export function getSuccessfulResponseModel(
+  op: HttpOperation,
+  swagger: Swagger
+): string {
+  let successfulResponseType;
+
+  try {
+    const successfulResponse = getSuccessfulResponse(op) as SwaggerSchema;
+    const convertedType = convertSchemaToModelType(successfulResponse, swagger);
+
+    successfulResponseType = convertedType;
+  } catch (error) {
+    successfulResponseType = defaultResponseType;
+  }
+
+  return successfulResponseType;
 }

@@ -1,9 +1,9 @@
 import * as _ from "lodash";
-import { Swagger, SwaggerType } from "./swagger/Swagger";
+import { Swagger, SwaggerType, SwaggerSchema } from "./swagger/Swagger";
 import { makeObjectTypeSpec } from "./type-mappers/object";
 import { makeReferenceTypeSpec, isReference } from "./type-mappers/reference";
 import { makeEnumTypeSpec, isEnum } from "./type-mappers/enum";
-import { TypeSpec } from "./typespec";
+import { TypeSpec, makeTypeSpecFromSwaggerType } from "./typespec";
 import { makeStringTypeSpec, isString } from "./type-mappers/string";
 import { makeNumberTypeSpec, isNumber } from "./type-mappers/number";
 import { makeBooleanTypeSpec, isBoolean } from "./type-mappers/boolean";
@@ -55,6 +55,31 @@ export function convertType(
 
   // Remaining types are created as objects
   return makeObjectTypeSpec(swaggerType, swagger);
+}
+
+/**
+ * TODO: Add Docs
+ *
+ * @param swaggerType a swagger type definition, i.e., the right hand side of a swagger type definition.
+ * @param swagger the full swagger spec object
+ * @returns a recursive structure representing the type, which can be used as a template model.
+ */
+export function convertSchemaToModelType(
+  swaggerType: SwaggerSchema,
+  swagger: Swagger
+): string {
+  const type = convertType(swaggerType.schema, swagger);
+  let result;
+
+  if (!type.isAtomic) {
+    if (type.isArray && type.elementType) {
+      result = type.elementType.target;
+    } else {
+      result = type.target;
+    }
+  }
+
+  return result || "null";
 }
 
 /**

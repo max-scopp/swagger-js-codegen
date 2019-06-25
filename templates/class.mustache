@@ -29,8 +29,14 @@ abstract class Model<T> {
         export interface I{{&name}}
             {{#tsType}}{{> type}}{{/tsType}}
 
-        export class {{&name}} extends Model<I{{&name}}>
+        class {{&name}}Model extends Model<I{{&name}}>
             {{#tsType}}{{> type}}{{/tsType}}
+
+        export class {{&name}} extends {{&name}}Model {
+            constructor(values?) {
+                super(values);
+            }
+        }
     {{/isClass}}
     {{^isClass}}
         export type {{&name}} = {{#tsType}}{{> type}}{{/tsType}};
@@ -209,7 +215,7 @@ export class {{&className}} {
 
     }
 
-    private request<T>(method: string, url: string, body: any, headers: Headers, reject: CallbackHandler, resolve: CallbackHandler) {
+    private request<T>(method: string, model: any, url: string, body: any, headers: Headers, reject: CallbackHandler, resolve: CallbackHandler) {
         if(this.logger) {
             this.logger.log(`Call ${method} ${url}`);
         }
@@ -253,7 +259,7 @@ export class {{&className}} {
                     });
                 } else if (acceptedJson) {
                     response.json().then(parsed => {
-                        derivedResponse.body = parsed
+                        derivedResponse.body = model ?  new model(parsed) : parsed
                         derivedResponse.bodyUsed = true
                         resolve(derivedResponse);
                     });

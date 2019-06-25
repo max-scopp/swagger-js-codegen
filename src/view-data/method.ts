@@ -1,16 +1,25 @@
-import { CodeGenOptions } from "../options/options";
-import { Swagger, HttpOperation, Parameter } from "../swagger/Swagger";
+import { camelCase, transform } from "lodash";
 import {
+  compose,
+  filter,
+  groupBy,
+  isUndefined,
+  map,
+  sortBy,
+  values
+} from "lodash/fp";
+
+import { CodeGenOptions } from "../options/options";
+import { HttpOperation, Parameter, Swagger } from "../swagger/Swagger";
+import { getHeadersForMethod, Header } from "./headers";
+import { getParametersForMethod, TypeSpecParameter } from "./parameter";
+import {
+  defaultResponseTypeName,
   getSuccessfulResponseType,
   renderResponseTypes,
-  defaultResponseTypeName
+  getSuccessfulResponseModel
 } from "./responseType";
-import { getVersion, getIntVersion } from "./version";
-import { getParametersForMethod, TypeSpecParameter } from "./parameter";
-import { getHeadersForMethod, Header } from "./headers";
-import { transform, camelCase } from "lodash";
-import { values, groupBy, sortBy, isUndefined, filter, map } from "lodash/fp";
-import { compose } from "lodash/fp";
+import { getIntVersion, getVersion } from "./version";
 
 export interface Method {
   readonly methodName: string;
@@ -32,6 +41,7 @@ export interface Method {
   readonly externalDocs: string;
   readonly parameters: TypeSpecParameter[];
   readonly headers: Header[];
+  readonly model: any;
   readonly responseTypes: string;
 
   /** @deprecated use responseTypes instead, this field will be removed in a future version. */
@@ -78,6 +88,7 @@ export function makeMethod(
     headers: getHeadersForMethod(op, swagger),
     successfulResponseType,
     successfulResponseTypeIsRef,
+    model: getSuccessfulResponseModel(op, swagger),
     responseTypes: renderResponseTypes(defaultResponseTypeName, op, swagger),
     isLatestVersion: false
   };
