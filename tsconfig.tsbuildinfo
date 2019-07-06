@@ -270,7 +270,7 @@
         "signature": "6517524674777d1111e3254fdaaeac8a6eaa0183e266e1b9600d4d5b20ef38f9"
       },
       "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/enhance/beautify.ts": {
-        "version": "75b2ec499f0c483f25ba183709b846686c86bec1b16a9a0e302cbb95a76c2c0a",
+        "version": "35f5f8dceed606f10c6cb455b9b306d08b3dfdee155f793400546df49be8d981",
         "signature": "6ef7989795a02e826916ab7827a3c272232ecbd34000931edbee2b74a211c2c3"
       },
       "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/enhance/index.ts": {
@@ -518,7 +518,6 @@
       "rootDir": "/Volumes/DAT_CamelCase/swagger-ts-codegen/src",
       "outDir": "/Volumes/DAT_CamelCase/swagger-ts-codegen/lib",
       "project": "tsconfig.json",
-      "watch": true,
       "configFilePath": "/Volumes/DAT_CamelCase/swagger-ts-codegen/tsconfig.json"
     },
     "referencedMap": {
@@ -1501,221 +1500,11 @@
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/index.d.ts": [
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/test-helpers/testHelpers.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/codegen.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/getViewForSwagger2.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/transform/transformToCodeWithMustache.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/options/options.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/enhance/index.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/enhance/beautify.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/transform/transformToCodeWithMustache.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/options/options.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/getViewForSwagger2.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/view-data/method.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/view-data/definition.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/options/options.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/view-data/definition.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/view-data/method.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/view-data/parameter.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/view-data/headers.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/options/options.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typescript.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/view-data/responseType.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/view-data/parameter.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/type-mappers/dictionary.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/type-mappers/array.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/type-mappers/object.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/type-mappers/reference.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/fp.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/view-data/operation.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
@@ -1743,9 +1532,153 @@
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts": [
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts": [
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/util.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/index.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/date.d.ts",
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/common/function.d.ts",
@@ -1767,26 +1700,22 @@
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/mustache/index.d.ts",
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts"
       ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/type-mappers/void.ts": [
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/fp.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/view-data/headers.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/type-mappers/object.ts": [
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts",
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts"
       ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/type-mappers/schema.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/type-mappers/any.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/type-mappers/boolean.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/type-mappers/number.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/type-mappers/string.ts": [
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/type-mappers/reference.ts": [
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts",
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts"
       ],
@@ -1794,15 +1723,81 @@
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts",
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts"
       ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts": [
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/type-mappers/string.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts",
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts"
       ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/view-data/headers.ts": [
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/type-mappers/number.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts",
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts"
       ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/js-beautify/index.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/type-mappers/boolean.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/type-mappers/array.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/type-mappers/dictionary.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/type-mappers/any.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/type-mappers/schema.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/type-mappers/void.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typescript.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/view-data/parameter.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/view-data/responseType.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/view-data/method.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/view-data/parameter.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/view-data/headers.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/options/options.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/view-data/definition.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/view-data/operation.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/getViewForSwagger2.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/view-data/method.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/view-data/definition.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/options/options.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/transform/transformToCodeWithMustache.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/options/options.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/enhance/index.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/enhance/beautify.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/codegen.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/getViewForSwagger2.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/transform/transformToCodeWithMustache.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/options/options.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/test-helpers/testHelpers.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/swagger/Swagger.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/src/typespec.ts"
       ],
       "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/jest/index.d.ts": [
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
@@ -1813,6 +1808,205 @@
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/assert.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/async_hooks.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/buffer.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/child_process.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/net.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/cluster.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/child_process.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/net.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/console.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/constants.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/crypto.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/dgram.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/net.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/dns.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/dns.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/domain.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/events.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/fs.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/url.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/http.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/net.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/url.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/http2.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/fs.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/net.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/tls.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/url.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/http.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/https.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/tls.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/http.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/url.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/inspector.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/module.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/net.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/dns.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/os.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/path.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/perf_hooks.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/async_hooks.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/process.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/punycode.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/querystring.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/readline.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/repl.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/readline.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/vm.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/stream.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/string_decoder.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/timers.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/tls.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/crypto.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/dns.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/net.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/trace_events.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/tty.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/net.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/url.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/querystring.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/v8.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/vm.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/worker_threads.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/events.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/stream.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/zlib.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/stream.d.ts",
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -1859,216 +2053,21 @@
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/zlib.d.ts",
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/index.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/base.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/globals.d.ts",
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts": [
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/async_hooks.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/perf_hooks.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/async_hooks.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/buffer.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/child_process.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/events.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/stream.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/net.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/cluster.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/child_process.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/events.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/net.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/console.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/constants.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/crypto.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/stream.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/tls.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/crypto.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/dns.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/net.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/stream.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/https.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/tls.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/events.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/http.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/url.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/http2.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/events.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/fs.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/net.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/stream.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/tls.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/url.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/http.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/dgram.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/net.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/dns.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/events.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/dns.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/net.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/stream.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/events.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/dns.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/tty.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/net.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/http.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/events.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/net.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/stream.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/url.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/domain.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/events.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/events.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/worker_threads.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/events.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/stream.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/stream.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/events.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/zlib.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/stream.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/readline.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/events.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/stream.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/repl.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/readline.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/vm.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/fs.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/stream.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/events.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/url.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/inspector.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/events.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/module.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/os.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/path.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/process.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/punycode.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/querystring.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/url.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/querystring.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/string_decoder.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/timers.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/trace_events.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/globals.d.ts": [
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/globals.d.ts",
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts": [
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/index.d.ts": [
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/base.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts",
+        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/globals.d.ts",
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts"
       ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/vm.d.ts": [
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
-        "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/v8.d.ts": [
+      "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/js-beautify/index.d.ts": [
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/util.d.ts",
         "/Volumes/DAT_CamelCase/swagger-ts-codegen/node_modules/@types/node/ts3.2/util.d.ts"
       ]
