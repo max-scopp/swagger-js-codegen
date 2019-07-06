@@ -4,7 +4,8 @@
 /// <reference path="{{&.}}" />
 {{/imports}}
 
-import fetch from "node-fetch";
+import fetch, { Request, Response, Headers } from "node-fetch";
+import FormData from 'form-data';
 
 export type RequestHeaders = {
     [header: string]: string;
@@ -227,7 +228,7 @@ export class {{&className}} {
         }
 
         if (this.requestHeadersHandler) {
-            headers = this.requestHeadersHandler({...headers});
+            headers = this.requestHeadersHandler(headers);
         }
 
         let req = new Request(url, {

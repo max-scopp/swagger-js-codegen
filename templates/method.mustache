@@ -29,7 +29,7 @@ public {{&methodName}}URL(parameters: {
                 const {{camelCaseName}} = params['{{&name}}'];
 
                 {{#isSingleton}}
-                    sp.set('{{&name}}', {{camelCaseName}});
+                    sp.set('{{camelCaseName}}', {{camelCaseName}});
                 {{/isSingleton}}
                 {{^isSingleton}}
                     {{#isPatternType}}
@@ -37,14 +37,14 @@ public {{&methodName}}URL(parameters: {
                             .filter(parameterName => {{camelCaseName}}.test(parameterName));
 
                         matches.forEach(match =>
-                            sp.append('{{name}}', match)
+                            sp.append('{{camelCaseName}}', match)
                         );
                     {{/isPatternType}}
                     {{^isPatternType}}
                         if(typeof {{camelCaseName}} === 'function') {
                             const has_{{camelCaseName}} = {{camelCaseName}}(parameters);
                             if(has_{{camelCaseName}} !== undefined){
-                                sp.set('{{&name}}', has_{{camelCaseName}});
+                                sp.set('{{camelCaseName}}', has_{{camelCaseName}});
                             }
                         } else {
                             this.isUnexpected('Expected "{{&name}}" of type `(parameters) => "{{&camelCaseName}}"`, but is of type: ' + typeof  {{camelCaseName}});
@@ -151,7 +151,11 @@ if(!discardParameters) {
 
     let hasForm = false;
 
-    (form as any).keys().next(({value, done}) => value ? hasForm = true : void 0);
+    if((form as any).keys) {
+        (form as any).keys().next(({value, done}) => value ? hasForm = true : void 0);
+    } else {
+        hasForm = !!form.getLengthSync();
+    }
 
     if(hasForm) {
         body = form;

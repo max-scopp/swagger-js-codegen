@@ -35,6 +35,7 @@
   "homepage": "https://github.com/mtennoe/swagger-typescript-codegen",
   "dependencies": {
     "commander": "^2.19.0",
+    "form-data": "^2.4.0",
     "js-beautify": "^1.8.9",
     "jshint": "^2.9.7",
     "lodash": "^4.17.11",
