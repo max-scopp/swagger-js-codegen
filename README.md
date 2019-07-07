@@ -18,7 +18,7 @@ This fork was made to simplify some parts, add some more features, and tailor it
 ## Installation
 
 ```bash
-npm install swagger-typescript-codegen
+yarn add @timeless/swagger-ts -D
 ```
 
 ## Example
