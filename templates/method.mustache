@@ -102,7 +102,6 @@ public {{&methodName}}(_parameters: {
 }): Promise<{{&responseTypes}}> {
     const {path: originalPath, method, params, headers: _headers, body: getBody, form: formParam, required: requiredParams} = {{className}}.entries[{{position}}];
 
-    // will be overwritten if `discardParameters`
     let url = new URL(this.{{&methodName}}URL(_parameters));
     const sp = url.searchParams;
 
@@ -130,7 +129,6 @@ const form = new FormData();
     body = getBody(parameters);
 {{/isBodyParameter}}
 
-if(!discardParameters) {
 {{#parameters}}
 
     {{#required}}
@@ -158,14 +156,12 @@ if(!discardParameters) {
                 })
         }
 
-    } else {
         // for some odd reason does searchParams prefer value over it's name (key)
         url.searchParams.forEach((value, name) => {
             form.append(name, value);
         });
 
-        url.search = '';
-    }
+        // url.search = '';
 
     let hasForm = false;
 
