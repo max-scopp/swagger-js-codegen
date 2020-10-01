@@ -2,6 +2,7 @@ import { map, entries } from "lodash";
 import { SwaggerType, Swagger } from "../swagger/Swagger";
 import { TypeSpec } from "../typespec";
 import { convertType } from "../typescript";
+import { safeName } from "../util";
 
 export interface Definition {
   readonly name: string;
@@ -17,10 +18,10 @@ export function makeDefinitionsFromSwaggerDefinitions(
   return map(entries(swaggerDefinitions), ([name, swaggerDefinition]) => {
     const tsType = convertType(swaggerDefinition, swagger);
     return {
-      name,
+      name: safeName(name),
       description: swaggerDefinition.description,
       isClass: tsType.isObject,
-      tsType
+      tsType,
     };
   });
 }

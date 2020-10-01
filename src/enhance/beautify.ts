@@ -1,14 +1,11 @@
-import { js_beautify } from "js-beautify";
+import * as prettier from "prettier";
 import { defaults } from "lodash";
 
-const DEFAULT_BEAUTIFY_OPTIONS: JsBeautifyOptions = {
-  indent_size: 4,
-  max_preserve_newlines: 2
-};
+const DEFAULT_BEAUTIFY_OPTIONS = { parser: "babel-ts" };
 
 export type Beautify = ((source: string) => string) | boolean | undefined;
 
-export type BeautifyOptions = JsBeautifyOptions;
+export type BeautifyOptions = prettier.Options;
 
 export function beautifyCode(
   beautify: Beautify,
@@ -17,7 +14,7 @@ export function beautifyCode(
 ): string {
   // Backwards compatible js_beautify
   if (beautify === undefined || beautify === true) {
-    return js_beautify(source, defaults(options, DEFAULT_BEAUTIFY_OPTIONS));
+    return prettier.format(source, defaults(options, DEFAULT_BEAUTIFY_OPTIONS));
   }
 
   // Run the beautify function if it has been provided

@@ -1,6 +1,7 @@
 import { makeTypeSpecFromSwaggerType, TypeSpec } from "../typespec";
 import { isString } from "lodash";
 import { SwaggerReference, SwaggerType } from "../swagger/Swagger";
+import { safeName } from "../util";
 
 export interface ReferenceTypeSpec extends TypeSpec {
   readonly tsType: "ref";
@@ -11,11 +12,14 @@ export interface ReferenceTypeSpec extends TypeSpec {
 export function makeReferenceTypeSpec(
   swaggerType: SwaggerReference
 ): ReferenceTypeSpec {
+  const target = safeName(
+    swaggerType.$ref.substring(swaggerType.$ref.lastIndexOf("/") + 1)
+  );
   return {
     ...makeTypeSpecFromSwaggerType(swaggerType),
-    target: swaggerType.$ref.substring(swaggerType.$ref.lastIndexOf("/") + 1),
+    target,
     tsType: "ref",
-    isRef: true
+    isRef: true,
   };
 }
 

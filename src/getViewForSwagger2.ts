@@ -4,16 +4,16 @@ import { Swagger } from "./swagger/Swagger";
 import {
   makeMethod,
   Method,
-  getLatestVersionOfMethods
+  getLatestVersionOfMethods,
 } from "./view-data/method";
 import {
   Definition,
-  makeDefinitionsFromSwaggerDefinitions
+  makeDefinitionsFromSwaggerDefinitions,
 } from "./view-data/definition";
 import {
   getHttpMethodTuplesFromSwaggerPathsObject,
   isAuthorizedAndNotDeprecated,
-  isAuthorizedMethod
+  isAuthorizedMethod,
 } from "./view-data/operation";
 
 export type GenerationTargetType = "typescript" | "custom";
@@ -33,6 +33,13 @@ export interface ViewData {
   definitions: Definition[];
 }
 
+function makeDomainUsingSchemes(swagger: Swagger) {
+  const [prefferedScheme] = swagger.schemes || [];
+  return `${prefferedScheme ? `${prefferedScheme}:` : ""}//${
+    swagger.host
+  }${swagger.basePath.replace(/\/+$/g, "")}`;
+}
+
 export function getViewForSwagger2(opts: CodeGenOptions): ViewData {
   const swagger = opts.swagger;
 
@@ -46,18 +53,9 @@ export function getViewForSwagger2(opts: CodeGenOptions): ViewData {
     moduleName: opts.moduleName,
     className: opts.className,
     imports: opts.imports,
-    domain:
-      swagger.schemes &&
-      swagger.schemes.length > 0 &&
-      swagger.host &&
-      swagger.basePath
-        ? `${swagger.schemes[0]}://${swagger.host}${swagger.basePath.replace(
-            /\/+$/g,
-            ""
-          )}`
-        : "",
+    domain: makeDomainUsingSchemes(swagger),
     methods: [],
-    definitions: []
+    definitions: [],
   };
 
   data.methods = makeMethodsFromPaths(data, opts, swagger);
@@ -72,18 +70,18 @@ export function getViewForSwagger2(opts: CodeGenOptions): ViewData {
   );
 
   return {
-    ...data
+    ...data,
   };
 }
 
 function setIsLatestVersion(
   latestVersions: Method[]
 ): (method: Method) => Method {
-  return method =>
+  return (method) =>
     latestVersions.indexOf(method) > -1
       ? {
           ...method,
-          isLatestVersion: true
+          isLatestVersion: true,
         }
       : method;
 }
@@ -95,7 +93,7 @@ const makeMethodsFromPaths = (
 ): Method[] =>
   getHttpMethodTuplesFromSwaggerPathsObject(swagger.paths)
     .filter(
-      method =>
+      (method) =>
         (opts.includeDeprecated && isAuthorizedMethod(method)) ||
         isAuthorizedAndNotDeprecated(method)
     )
@@ -107,9 +105,11 @@ const makeMethodsFromPaths = (
         swagger.securityDefinitions !== undefined ||
         op.security !== undefined
       ) {
-        const mergedSecurity = merge([], swagger.security, op.security).map(
-          security => Object.keys(security)
-        );
+        const mergedSecurity = merge(
+          [],
+          swagger.security,
+          op.security
+        ).map((security) => Object.keys(security));
         if (swagger.securityDefinitions) {
           for (const sk in swagger.securityDefinitions) {
             if (mergedSecurity.join(",").indexOf(sk) !== -1) {
@@ -151,6 +151,6 @@ const makeMethodsFromPaths = (
 
       return {
         position: index,
-        ...method
+        ...method,
       };
     });

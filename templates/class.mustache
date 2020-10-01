@@ -18,9 +18,10 @@ export type ConfigureRequestHandler = (agent: Request) => Request;
 export type CallbackHandler = (err: any, res?: Response) => void;
 
 abstract class Model<T> {
-    constructor(values: Partial<T>) {
-        Object.entries(values)
-            .map(([key, value]) => this[key] = value);
+    constructor(values?: T) {
+        if(values) {
+            Object.assign(this, values)
+        }
     }
 }
 
@@ -30,14 +31,9 @@ abstract class Model<T> {
         export interface I{{&name}}
             {{#tsType}}{{> type}}{{/tsType}}
 
-        class {{&name}}Model extends Model<I{{&name}}>
+        export class {{&name}} extends Model<I{{&name}}>
             {{#tsType}}{{> type}}{{/tsType}}
 
-        export class {{&name}} extends {{&name}}Model {
-            constructor(values?) {
-                super(values);
-            }
-        }
     {{/isClass}}
     {{^isClass}}
         export type {{&name}} = {{#tsType}}{{> type}}{{/tsType}};
@@ -58,10 +54,18 @@ export interface ResponseWithBody<S extends number, T> {
     readonly url: string;
     readonly body: T;
     readonly bodyUsed: boolean;
-    clone (): SwaggerResponse<T>;
+    clone(): SwaggerResponse<T>;
+    readonly original: Response;
+    arrayBuffer(): Promise<ArrayBuffer>;
+    blob(): Promise<Blob>;
+    json(): Promise<any>;
+    text(): Promise<string>;
 }
 
+
 class SwaggerResponse<T> implements ResponseWithBody<number, T> {
+    protected readonly _originalResponse: Response;
+
     headers: Headers;
     ok: boolean;
     redirected: boolean;
@@ -74,7 +78,12 @@ class SwaggerResponse<T> implements ResponseWithBody<number, T> {
     bodyUsed: boolean;
 
     constructor(response: Response | SwaggerResponse<T>) {
-        this.body = response.body as T;
+        if(response instanceof SwaggerResponse) {
+            this._originalResponse = response.original
+        } else {
+            this._originalResponse = response
+        }
+
         this.bodyUsed = response.bodyUsed;
         this.headers = response.headers;
         this.ok = response.ok;
@@ -85,11 +94,68 @@ class SwaggerResponse<T> implements ResponseWithBody<number, T> {
         this.url = response.url;
     }
 
-    clone () {
+    arrayBuffer(): Promise<ArrayBuffer> {
+        return this.original.arrayBuffer();
+    }
+    blob(): Promise<Blob> {
+        return this.original.blob();
+    }
+    
+    json(): Promise<any> {
+        return this.original.json();
+    }
+    text(): Promise<string> {
+        return this.original.text();
+    }
+
+    get original() {
+        return this._originalResponse
+    }
+
+    clone() {
         return new SwaggerResponse<T>(this);
     }
 }
 
+class SwaggerErrorResponse<T> extends Error implements ResponseWithBody<number, T> {
+    protected _originalResponse: Response;
+    headers: Headers;
+    ok: boolean;
+    redirected: boolean;
+    status: number;
+    statusText: string;
+    trailer: Promise<Headers>;
+    type: ResponseType;
+    url: string;
+    body: T;
+    bodyUsed: boolean;
+    
+    clone: () => SwaggerResponse<T>;
+    arrayBuffer: () => Promise<ArrayBuffer>;
+    blob: () => Promise<Blob>;
+    json: () => Promise<any>;
+    text: () => Promise<string>;
+
+    constructor(response: SwaggerResponse<T>) {
+        super([response.status, response.url, response.statusText].join(' '));
+        if(response.body && response.body.error && response.body.message) {
+            this.name = response.body.error
+            this.message = response.body.message
+        }
+
+        Object.assign(this, response)
+
+        this.clone = response.clone;
+        this.arrayBuffer = response.arrayBuffer;
+        this.blob = response.blob;
+        this.json = response.json;
+        this.text = response.text;
+    }
+
+    get original() {
+        return this._originalResponse;
+    }
+}
 
 export interface CommonRequestOptions {
   $queryParameters?: {[param: string]: any};
@@ -97,17 +163,19 @@ export interface CommonRequestOptions {
   $path?: string | ((path: string) => string);
 }
 
+type ParamGetter = ((p: { [k: string]: any }) => string);
+
 type Definition = {
     path: string,
     method: string,
     callable: (ctx: {{&className}}) => (parameters: {[k:string]: any}) => Promise<any>,
     params: {
-        [k: string]: RegExp | string | ((p: { [k: string]: any }) => string)
+        [k: string]: RegExp | string | ParamGetter
     },
-    headers: {[k:string]: string},
+    headers: {[k:string]: string | ParamGetter},
     body?: (p: {[k:string]:any}) => string,
     form?: {
-        [k: string]: string | ((p: { [k: string]: any }) => string)
+        [k: string]: string | ParamGetter
     },
     required?: string[]
 }
@@ -148,7 +216,7 @@ export class {{&className}} {
         return mapping;
     })();
 
-    constructor(domain?: string, private logger?: Logger) {
+    constructor(domain?: string, protected headers: {[name: string]: string} = {}, private logger?: Logger) {
         if(domain) {
             this.domain = domain;
         }
@@ -242,41 +310,34 @@ export class {{&className}} {
         }
 
         fetch(req).then((response) => {
-            if(!response.ok) {
-                // if no error, but response not ok, hope that the body contains details
-                const error = new Error('Response status not OK: ' + response.status + ' ' + response.statusText);
+            const isJsonResponse = /application\/json/.test(response.headers.get('content-type') || headers.get('Accept'));
+            const derivedResponse = new SwaggerResponse<T>(response);
 
-                this.errorHandlers.forEach(handler => handler(error));
-                reject(error);
-            } else {
-                const acceptedJson = /application\/json/.test(headers.get('Accept'));
-                const derivedResponse = new SwaggerResponse<T>(response);
-
-                if(response.status === 204) {
-                    response.text().then(parsed => {
-                        derivedResponse.body = parsed
-                        derivedResponse.bodyUsed = true
-                        resolve(derivedResponse);
-                    });
-                } else if (acceptedJson) {
-                    response.json().then(parsed => {
-                        let newBody = parsed;
-
-                        if(model) {
-                            if(parsed instanceof Array) {
-                                newBody = parsed.map(item => new model(item));
-                            } else {
-                                newBody = new model(parsed);
-                            }
-                        }
-
-                        derivedResponse.body = newBody
-                        derivedResponse.bodyUsed = true
-                        resolve(derivedResponse);
-                    });
+            const proceed = () => {
+                if(!response.ok) {
+                    const error = new SwaggerErrorResponse(derivedResponse);
+                    this.errorHandlers.forEach(handler => handler(error));
+                    reject(error);
                 } else {
                     resolve(derivedResponse);
                 }
+            }
+
+            if(isJsonResponse) {
+                response.json().then(newBody => {
+                    if(response.ok && model) {
+                        if(newBody instanceof Array) {
+                            derivedResponse.body = newBody.map(item => new model(item)) as any as T
+                        } else {
+                            derivedResponse.body = new model(newBody);
+                        }
+                    } else {
+                        derivedResponse.body = newBody;
+                    }
+                    proceed()
+                }).catch(reject)
+            } else {
+                proceed()
             }
         }).catch((err) => {
             this.errorHandlers.forEach(handler => handler(err));

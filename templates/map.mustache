@@ -19,7 +19,12 @@
         },
         headers: {
             {{#headers}}
+                {{#isSingleton}}
                 '{{&name}}': {{&value}},
+                {{/isSingleton}}
+                {{^isSingleton}}
+                '{{&name}}': (p) => p['{{&name}}'],
+                {{/isSingleton}}
             {{/headers}}
         },
     {{#parameters}}
@@ -42,7 +47,7 @@
         required: [
     {{#parameters}}
         {{#required}}
-        '{{&camelCaseName}}'
+        '{{&camelCaseName}}',
         {{/required}}
     {{/parameters}}
         ]

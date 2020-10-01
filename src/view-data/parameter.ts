@@ -1,7 +1,7 @@
 import { camelCase, isString } from "lodash/fp";
+import { Parameter, Swagger } from "../swagger/Swagger";
 import { convertType } from "../typescript";
 import { TypeSpec } from "../typespec";
-import { Swagger, Parameter } from "../swagger/Swagger";
 
 export interface TypeSpecParameter extends Parameter {
   readonly isBodyParameter: boolean;
@@ -10,6 +10,7 @@ export interface TypeSpecParameter extends Parameter {
   readonly isHeaderParameter: boolean;
   readonly isFormParameter: boolean;
   readonly tsType: TypeSpec;
+  readonly paramType: TypeSpec["tsType"];
   readonly cardinality: "" | "?";
 }
 
@@ -40,19 +41,21 @@ function makeTypespecParameterFromSwaggerParameter(
   swagger: Swagger
 ): TypeSpecParameter {
   const isSingleton = parameter.enum && parameter.enum.length === 1;
+  const tsType = convertType(parameter, swagger);
 
   return {
     ...parameter,
     camelCaseName: camelCase(parameter.name),
+    paramType: tsType.tsType,
     isBodyParameter: false,
     isPathParameter: false,
     isQueryParameter: false,
     isHeaderParameter: false,
     isFormParameter: false,
     cardinality: parameter.required ? "" : "?",
-    tsType: convertType(parameter, swagger),
+    tsType,
     isSingleton,
-    singleton: isSingleton ? parameter.enum[0] : undefined
+    singleton: isSingleton ? parameter.enum[0] : undefined,
   };
 }
 
@@ -101,7 +104,7 @@ function makeBodyParameter(
 ): BodyParameter {
   return {
     ...makeTypespecParameterFromSwaggerParameter(parameter, swagger),
-    isBodyParameter: true
+    isBodyParameter: true,
   };
 }
 
@@ -115,7 +118,7 @@ function makePathParameter(
 ): PathParameter {
   return {
     ...makeTypespecParameterFromSwaggerParameter(parameter, swagger),
-    isPathParameter: true
+    isPathParameter: true,
   };
 }
 
@@ -133,7 +136,7 @@ function makeQueryParameter(
     ...makeTypespecParameterFromSwaggerParameter(parameter, swagger),
     isQueryParameter: true,
     pattern: parameter["x-name-pattern"],
-    isPatternType: parameter["x-name-pattern"] !== undefined
+    isPatternType: parameter["x-name-pattern"] !== undefined,
   };
 }
 
@@ -147,7 +150,7 @@ function makeHeaderParameter(
 ): HeaderParameter {
   return {
     ...makeTypespecParameterFromSwaggerParameter(parameter, swagger),
-    isHeaderParameter: true
+    isHeaderParameter: true,
   };
 }
 
@@ -161,6 +164,6 @@ function makeFormParameter(
 ): FormParameter {
   return {
     ...makeTypespecParameterFromSwaggerParameter(parameter, swagger),
-    isFormParameter: true
+    isFormParameter: true,
   };
 }

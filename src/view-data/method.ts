@@ -6,7 +6,7 @@ import {
   isUndefined,
   map,
   sortBy,
-  values
+  values,
 } from "lodash/fp";
 
 import { CodeGenOptions } from "../options/options";
@@ -17,7 +17,7 @@ import {
   defaultResponseTypeName,
   getSuccessfulResponseType,
   renderResponseTypes,
-  getSuccessfulResponseModel
+  getSuccessfulResponseModel,
 } from "./responseType";
 import { getIntVersion, getVersion } from "./version";
 
@@ -64,8 +64,14 @@ export function makeMethod(
     : getPathToMethodName(httpVerb, path);
   const [
     successfulResponseType,
-    successfulResponseTypeIsRef
+    successfulResponseTypeIsRef,
   ] = getSuccessfulResponseType(op, swagger);
+
+  const parameters = getParametersForMethod(
+    globalParams,
+    op.parameters,
+    swagger
+  );
 
   return {
     path,
@@ -84,13 +90,13 @@ export function makeMethod(
     isSecureToken: secureTypes.indexOf("oauth2") !== -1,
     isSecureApiKey: secureTypes.indexOf("apiKey") !== -1,
     isSecureBasic: secureTypes.indexOf("basic") !== -1,
-    parameters: getParametersForMethod(globalParams, op.parameters, swagger),
-    headers: getHeadersForMethod(op, swagger),
+    parameters,
+    headers: getHeadersForMethod(op, parameters, swagger),
     successfulResponseType,
     successfulResponseTypeIsRef,
     model: getSuccessfulResponseModel(op, swagger),
     responseTypes: renderResponseTypes(defaultResponseTypeName, op, swagger),
-    isLatestVersion: false
+    isLatestVersion: false,
   };
 }
 
@@ -130,12 +136,7 @@ const pickLast = (methods: Method[]): Method | undefined =>
 const isNotUndefined = (method: Method | undefined): method is Method =>
   !isUndefined(method);
 
-const getLatestVersionOfMethod = map(
-  compose(
-    pickLast,
-    sortByVersion
-  )
-);
+const getLatestVersionOfMethod = map(compose(pickLast, sortByVersion));
 export const getLatestVersionOfMethods = compose(
   filter(isNotUndefined),
   getLatestVersionOfMethod,

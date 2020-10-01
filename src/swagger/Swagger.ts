@@ -112,7 +112,7 @@ export const schemaAllowedHttpMethods: HttpMethod[] = [
   "delete",
   "options",
   "head",
-  "patch"
+  "patch",
 ];
 
 // https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#pathItemObject
