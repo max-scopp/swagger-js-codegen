@@ -12,12 +12,6 @@ The typescript generator is based on [superagent](https://github.com/visionmedia
 
 This fork was made to simplify some parts, add some more features, and tailor it more to specific use cases.
 
-## Installation
-
-```bash
-yarn add @timeless/swagger-ts -D
-```
-
 ## Example
 
 ```javascript
@@ -29,7 +23,7 @@ var swagger = JSON.parse(fs.readFileSync(file, "UTF-8"));
 var tsSourceCode = CodeGen.getTypescriptCode({
   className: "Test",
   swagger: swagger,
-  imports: ["../../typings/tsd.d.ts"]
+  imports: ["../../typings/tsd.d.ts"],
 });
 console.log(tsSourceCode);
 ```
@@ -44,8 +38,8 @@ var source = CodeGen.getCustomCode({
   template: {
     class: fs.readFileSync("my-class.mustache", "utf-8"),
     method: fs.readFileSync("my-method.mustache", "utf-8"),
-    type: fs.readFileSync("my-type.mustache", "utf-8")
-  }
+    type: fs.readFileSync("my-type.mustache", "utf-8"),
+  },
 });
 ```
 
