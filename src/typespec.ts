@@ -35,6 +35,6 @@ export function makeTypeSpecFromSwaggerType(
     tsType: undefined,
     isAtomic: false,
     target: undefined,
-    properties: undefined
+    properties: undefined,
   };
 }

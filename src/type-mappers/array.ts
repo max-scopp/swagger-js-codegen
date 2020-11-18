@@ -19,11 +19,13 @@ export function makeArrayTypeSpec(
   return {
     ...makeTypeSpecFromSwaggerType(swaggerType),
     elementType: elementTypeSpec,
-    tsType: `Array<${elementTypeSpec.target ||
-      elementTypeSpec.tsType ||
-      "any"}>`,
+    tsType: `Array<${
+      elementTypeSpec.target
+        ? `I${elementTypeSpec.target}`
+        : elementTypeSpec.tsType || "any"
+    }>`,
     isArray: true,
-    isAtomic: false
+    isAtomic: false,
   };
 }
 

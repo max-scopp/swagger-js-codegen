@@ -1,3 +1,4 @@
+/* eslint-disable */
 // tslint:disable
 
 {{#imports}}
@@ -23,19 +24,50 @@ abstract class Model<T> {
             Object.assign(this, values)
         }
     }
+
+    toString() {
+        return JSON.stringify(this);
+    }
 }
 
 {{#definitions}}
-
     {{#isClass}}
+        {{#description}}
+        /**
+         * {{description}}
+         */{{/description}}
         export interface I{{&name}}
             {{#tsType}}{{> type}}{{/tsType}}
 
-        export class {{&name}} extends Model<I{{&name}}>
+        export class Built{{&name}} extends Model<I{{&name}}> {
+            constructor(values) {
+                super(values);
+
+                {{#tsType}}
+                    {{#properties}}
+                        {{#tsType}}
+                            {{#isRef}}
+                this['{{&name}}'] = new {{&target}}(values['{{&name}}']);
+                            {{/isRef}}
+                        {{/tsType}}
+                    {{/properties}}
+                {{/tsType}}
+            }
+        }
+
+        {{#description}}
+        /**
+         * {{description}}
+         */{{/description}}
+        export class {{&name}} extends Built{{&name}}
             {{#tsType}}{{> type}}{{/tsType}}
 
     {{/isClass}}
     {{^isClass}}
+        {{#description}}
+        /**
+         * {{description}}
+         */{{/description}}
         export type {{&name}} = {{#tsType}}{{> type}}{{/tsType}};
     {{/isClass}}
 {{/definitions}}
@@ -117,7 +149,7 @@ class SwaggerResponse<T> implements ResponseWithBody<number, T> {
     }
 }
 
-class SwaggerErrorResponse<T> extends Error implements ResponseWithBody<number, T> {
+class SwaggerErrorResponse<T = any> extends Error implements ResponseWithBody<number, T> {
     protected _originalResponse: Response;
     headers: Headers;
     ok: boolean;
@@ -138,9 +170,10 @@ class SwaggerErrorResponse<T> extends Error implements ResponseWithBody<number, 
 
     constructor(response: SwaggerResponse<T>) {
         super([response.status, response.url, response.statusText].join(' '));
-        if(response.body && response.body.error && response.body.message) {
-            this.name = response.body.error
-            this.message = response.body.message
+        const body = response.body as any;
+        if(body && body.error && body.message) {
+            this.name = body.error
+            this.message = body.message
         }
 
         Object.assign(this, response)
@@ -163,15 +196,18 @@ export interface CommonRequestOptions {
   $path?: string | ((path: string) => string);
 }
 
-type ParamGetter = ((p: { [k: string]: any }) => string);
+type ParamGetter = ((p: { [k: string]: any }) => string | DynamicParam);
+type DynamicParam = ((p: { [k: string]: any }) => string);
+
+type Parameters = {
+    [k: string]: RegExp | string | ParamGetter
+}
 
 type Definition = {
     path: string,
     method: string,
     callable: (ctx: {{&className}}) => (parameters: {[k:string]: any}) => Promise<any>,
-    params: {
-        [k: string]: RegExp | string | ParamGetter
-    },
+    params: Parameters,
     headers: {[k:string]: string | ParamGetter},
     body?: (p: {[k:string]:any}) => string,
     form?: {
@@ -220,6 +256,44 @@ export class {{&className}} {
         if(domain) {
             this.domain = domain;
         }
+    }
+
+    isRequired(paramName: string, parameters: {[key: string]: any}, paramType: string, displayName: string, reject?: Function) {
+        if(parameters[paramName] === undefined) {
+            this.isUnexpected(`Missing required ${paramType} parameter: "${displayName}"`, reject);
+        }
+    }
+
+    resolveParam(value: string | ParamGetter, parameters: {[key: string]: any | ParamGetter}, optional?: true) {
+        const resolve = (staticOrDynamicValue) => {
+            // if another function, it's referenced
+            // to an dynamic (user provided) parameter value,
+            // otherwise it's statically resolved
+            return typeof staticOrDynamicValue === "function"
+                ? staticOrDynamicValue(parameters)
+                : staticOrDynamicValue;
+        }
+
+        if (typeof value === "string") {
+            const definition = parameters[value];
+
+            if(!optional && !definition){
+                return value;
+            }
+
+            // static or dynamic value resolvement.
+            if (typeof definition === "function") {
+                const staticOrDynamicValue = definition(parameters);
+
+                return resolve(staticOrDynamicValue);
+            }
+
+            return definition;
+        }
+
+        return resolve(
+            value(parameters)
+        );
     }
 
     isUnexpected(errorMessage, reject?) {
@@ -302,7 +376,7 @@ export class {{&className}} {
         let req = new Request(url, {
             method,
             headers,
-            body
+            body: body instanceof Array ? JSON.stringify(body) : body
         });
 
         if (this.configureRequestHandler) {

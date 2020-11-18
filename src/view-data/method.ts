@@ -1,4 +1,3 @@
-import { camelCase, transform } from "lodash";
 import {
   compose,
   filter,
@@ -8,16 +7,15 @@ import {
   sortBy,
   values,
 } from "lodash/fp";
-
 import { CodeGenOptions } from "../options/options";
 import { HttpOperation, Parameter, Swagger } from "../swagger/Swagger";
 import { getHeadersForMethod, Header } from "./headers";
 import { getParametersForMethod, TypeSpecParameter } from "./parameter";
 import {
   defaultResponseTypeName,
+  getSuccessfulResponseModel,
   getSuccessfulResponseType,
   renderResponseTypes,
-  getSuccessfulResponseModel,
 } from "./responseType";
 import { getIntVersion, getVersion } from "./version";
 
@@ -39,6 +37,7 @@ export interface Method {
   readonly isDeprecated: boolean;
   readonly summary: string;
   readonly externalDocs: string;
+  readonly hasUserParams: boolean;
   readonly parameters: TypeSpecParameter[];
   readonly headers: Header[];
   readonly model: any;
@@ -59,9 +58,7 @@ export function makeMethod(
   secureTypes: string[],
   globalParams: ReadonlyArray<Parameter>
 ): Method {
-  const methodName = op.operationId
-    ? normalizeName(op.operationId)
-    : getPathToMethodName(httpVerb, path);
+  const methodName = normalizeName(op, httpVerb);
   const [
     successfulResponseType,
     successfulResponseTypeIsRef,
@@ -72,6 +69,8 @@ export function makeMethod(
     op.parameters,
     swagger
   );
+
+  const userParams = parameters.filter((param) => !param.isSingleton);
 
   return {
     path,
@@ -90,6 +89,7 @@ export function makeMethod(
     isSecureToken: secureTypes.indexOf("oauth2") !== -1,
     isSecureApiKey: secureTypes.indexOf("apiKey") !== -1,
     isSecureBasic: secureTypes.indexOf("basic") !== -1,
+    hasUserParams: Boolean(userParams.length),
     parameters,
     headers: getHeadersForMethod(op, parameters, swagger),
     successfulResponseType,
@@ -102,29 +102,12 @@ export function makeMethod(
 
 const charactersToBeReplacedWithUnderscore = /\.|\-|\{|\}/g;
 
-function normalizeName(id: string): string {
-  return id.replace(charactersToBeReplacedWithUnderscore, "_");
-}
-
-function getPathToMethodName(httpVerb: string, path: string): string {
-  // clean url path for requests ending with '/'
-  const cleanPath = path.replace(/\/$/, "");
-
-  let segments = cleanPath.split("/").slice(1);
-  segments = transform(segments, (result, segment) => {
-    if (segment[0] === "{" && segment[segment.length - 1] === "}") {
-      segment = `by${segment[1].toUpperCase()}${segment.substring(
-        2,
-        segment.length - 1
-      )}`;
-    }
-    result.push(segment);
-  });
-
-  const result = camelCase(segments.join("-"));
-  return `${httpVerb.toLowerCase()}${result[0].toUpperCase()}${result.substring(
-    1
-  )}`;
+function normalizeName(op: HttpOperation, httpVerb: string): string {
+  const partialResult = op.operationId.replace(
+    charactersToBeReplacedWithUnderscore,
+    "_"
+  );
+  return partialResult.replace(`Using${httpVerb.toUpperCase()}`, "");
 }
 
 const groupMethodsByMethodName = (methods: Method[]): Method[][] =>

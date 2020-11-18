@@ -14,6 +14,7 @@ export interface SwaggerType {
   readonly description?: string;
   readonly required: boolean | ReadonlyArray<string>;
   readonly type: SwaggerTypes;
+  readonly format?: string;
   readonly allOf?: ReadonlyArray<SwaggerType>;
   readonly minItems: number;
   readonly title?: string;

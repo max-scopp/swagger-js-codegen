@@ -34,7 +34,7 @@ export interface ViewData {
 }
 
 function makeDomainUsingSchemes(swagger: Swagger) {
-  const [prefferedScheme] = swagger.schemes || [];
+  const [prefferedScheme = null] = swagger.schemes || [];
   return `${prefferedScheme ? `${prefferedScheme}:` : ""}//${
     swagger.host
   }${swagger.basePath.replace(/\/+$/g, "")}`;

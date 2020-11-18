@@ -1,20 +1,21 @@
 {
-    "compilerOptions": {
-        "target": "es2015",
-        "lib": ["es2017", "es2015"],
-        "composite": true,
-        "strict": true,
-        "noUnusedLocals": true,
-        "noUnusedParameters": true,
-        "declarationMap": true,
-        "inlineSourceMap": true,
-        "inlineSources": false,
-        "declaration": true,
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "preserveWatchOutput": true,
-        "rootDir": "./src",
-        "outDir": "lib"
-    },
-    "include": ["src/**/*.ts"]
+  "compilerOptions": {
+    "target": "es2015",
+    "lib": ["es2017", "es2015"],
+    "skipLibCheck": true,
+    "composite": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "declarationMap": true,
+    "inlineSourceMap": true,
+    "inlineSources": false,
+    "declaration": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "preserveWatchOutput": true,
+    "rootDir": "./src",
+    "outDir": "lib"
+  },
+  "include": ["src/**/*.ts"]
 }

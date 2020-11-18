@@ -1,20 +1,20 @@
-import * as _ from "lodash";
-import { Swagger, SwaggerType, SwaggerSchema } from "./swagger/Swagger";
-import { makeObjectTypeSpec } from "./type-mappers/object";
-import { makeReferenceTypeSpec, isReference } from "./type-mappers/reference";
-import { makeEnumTypeSpec, isEnum } from "./type-mappers/enum";
-import { TypeSpec } from "./typespec";
-import { makeStringTypeSpec, isString } from "./type-mappers/string";
-import { makeNumberTypeSpec, isNumber } from "./type-mappers/number";
-import { makeBooleanTypeSpec, isBoolean } from "./type-mappers/boolean";
-import { makeArrayTypeSpec, isArray } from "./type-mappers/array";
+import { Swagger, SwaggerSchema, SwaggerType } from "./swagger/Swagger";
+import { isAnyTypeSpec, makeAnyTypeSpec } from "./type-mappers/any";
+import { isArray, makeArrayTypeSpec } from "./type-mappers/array";
+import { isBoolean, makeBooleanTypeSpec } from "./type-mappers/boolean";
+import { isDateTypeSpec, makeDateTypeSpec } from "./type-mappers/date";
 import {
+  isDictionary,
   makeDictionaryTypeSpec,
-  isDictionary
 } from "./type-mappers/dictionary";
-import { makeAnyTypeSpec, isAnyTypeSpec } from "./type-mappers/any";
+import { isEnum, makeEnumTypeSpec } from "./type-mappers/enum";
+import { isNumber, makeNumberTypeSpec } from "./type-mappers/number";
+import { makeObjectTypeSpec } from "./type-mappers/object";
+import { isReference, makeReferenceTypeSpec } from "./type-mappers/reference";
 import { isSchema } from "./type-mappers/schema";
-import { makeVoidTypeSpec, isVoidType } from "./type-mappers/void";
+import { isString, makeStringTypeSpec } from "./type-mappers/string";
+import { isVoidType, makeVoidTypeSpec } from "./type-mappers/void";
+import { TypeSpec } from "./typespec";
 
 /**
  * Recursively converts a swagger type description into a typescript type, i.e., a model for our mustache
@@ -36,6 +36,8 @@ export function convertType(
     return makeReferenceTypeSpec(swaggerType);
   } else if (isEnum(swaggerType)) {
     return makeEnumTypeSpec(swaggerType);
+  } else if (isDateTypeSpec(swaggerType)) {
+    return makeDateTypeSpec(swaggerType);
   } else if (isString(swaggerType)) {
     return makeStringTypeSpec(swaggerType);
   } else if (isNumber(swaggerType)) {
@@ -91,4 +93,4 @@ export const convertTypes = (
   swaggerTypes: SwaggerType[],
   swagger: Swagger
 ): TypeSpec[] =>
-  swaggerTypes.map(swaggerType => convertType(swaggerType, swagger));
+  swaggerTypes.map((swaggerType) => convertType(swaggerType, swagger));

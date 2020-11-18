@@ -15,6 +15,7 @@ export function makeReferenceTypeSpec(
   const target = safeName(
     swaggerType.$ref.substring(swaggerType.$ref.lastIndexOf("/") + 1)
   );
+
   return {
     ...makeTypeSpecFromSwaggerType(swaggerType),
     target,
